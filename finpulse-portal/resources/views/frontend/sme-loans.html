@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SME Loan Products &amp; Eligibility Examples | FinPulse Demo</title>
+    <meta name="description" content="Sample SME financing structures with illustrative amounts, terms, rates, repayment frequencies, a document checklist and an application journey. Demonstration content only.">
+    <link rel="canonical" href="https://finpulse.example/resources/views/frontend/sme-loans.html">
+    <meta name="theme-color" content="#123b4a">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FinPulse (fictional demo)">
+    <meta property="og:title" content="SME Loan Products &amp; Eligibility Examples | FinPulse Demo">
+    <meta property="og:description" content="Fictional SME loan structures with illustrative figures, document checklists and a repayment comparison.">
+    <meta property="og:url" content="https://finpulse.example/resources/views/frontend/sme-loans.html">
+    <meta property="og:image" content="https://finpulse.example/public/assets/images/photos/sme-workshop.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="components-base" content="../../../resources/views/components/">
+    <link rel="icon" href="../../../public/assets/images/branding/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../../public/css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div data-component="header" data-active="sme-loans"></div>
+    <div data-component="breadcrumbs" data-trail="Home:home.html|Services:services.html|SME loans"></div>
+
+    <main id="main" tabindex="-1">
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <span class="eyebrow">SME loans</span>
+                <h1 id="page-title">Compare structures before you commit to a conversation</h1>
+                <p class="lead">Six sample financing structures, shown with amount ranges, terms, illustrative rates and repayment frequencies. Filter by category, then test any figure in the calculator.</p>
+                <div class="info-panel info-panel--warning">
+                    <h3>Demonstration only</h3>
+                    <p>None of these products exist. The amounts, rates and terms are invented to demonstrate layout and comparison. Nothing on this page is an offer, an approval or a statement of eligibility.</p>
+                </div>
+            </div>
+        </section>
+
+        <nav class="subnav" aria-label="Service pages">
+            <div class="container">
+                <ul class="subnav__list">
+                    <li><a class="subnav__link" href="services.html">All services</a></li>
+                    <li><a class="subnav__link" href="digital-payments.html">Digital payments</a></li>
+                    <li><a class="subnav__link" href="microfinance.html">Microfinance</a></li>
+                    <li><a class="subnav__link" href="sme-loans.html" aria-current="page">SME loans</a></li>
+                    <li><a class="subnav__link" href="p2p-lending.html">P2P marketplace</a></li>
+                    <li><a class="subnav__link" href="financial-literacy.html">Financial literacy</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="section" aria-labelledby="products-title">
+            <div class="container" data-filters>
+                <div data-component="section-heading"
+                     data-id="products-title"
+                     data-eyebrow="Sample loan products"
+                     data-title="Six fictional structures"
+                     data-lead="Filtering happens entirely in your browser; no data is sent anywhere."></div>
+
+                <div class="filter-bar">
+                    <div class="chip-group" role="group" aria-label="Filter sample products by category">
+                        <button class="chip" type="button" data-filter="all" aria-pressed="true">All sample products</button>
+                        <button class="chip" type="button" data-filter="working-capital" aria-pressed="false">Working capital</button>
+                        <button class="chip" type="button" data-filter="equipment" aria-pressed="false">Equipment</button>
+                        <button class="chip" type="button" data-filter="trade" aria-pressed="false">Trade &amp; inventory</button>
+                        <button class="chip" type="button" data-filter="expansion" aria-pressed="false">Expansion</button>
+                    </div>
+                    <div class="filter-search">
+                        <div class="field">
+                            <label class="field__label" for="product-search">Search sample products</label>
+                            <input class="input" type="search" id="product-search" data-filter-search
+                                   placeholder="For example: equipment, inventory" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+
+                <p class="filter-count" data-filter-count aria-live="polite"></p>
+
+                <div class="grid grid--3" data-filter-list>
+                    <article class="loan-card" data-filter-item data-categories="working-capital">
+                        <div class="loan-card__head">
+                            <h3 class="loan-card__name">Working Capital Line</h3>
+                            <span class="badge badge--demo">Sample product</span>
+                        </div>
+                        <p class="loan-card__amount">
+                            <span>BDT 50,000 – 15,00,000</span>
+                            <span class="loan-card__amount-note">Sample range for a fictional demonstration product</span>
+                        </p>
+                        <dl class="fact-list">
+                            <div><dt>Indicative term</dt><dd>6 – 24 months</dd></div>
+                            <div><dt>Illustrative rate</dt><dd>Illustrative 14% – 22% p.a.</dd></div>
+                            <div><dt>Repayment frequency</dt><dd>Monthly or fortnightly</dd></div>
+                            <div><dt>Sample category</dt><dd>Working capital</dd></div>
+                        </dl>
+                        <p class="small muted">A demonstration structure for covering short-term gaps such as supplier payments, rent and seasonal wages.</p>
+                        <div>
+                            <h4 class="small">Sample document checklist</h4>
+                            <ul class="benefit-list">
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg><span>Sample trade record or sales summary</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg><span>Illustrative cash-flow statement</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg><span>Business identification example</span></li>
+                            </ul>
+                        </div>
+                        <div class="card__footer">
+                            <a class="btn btn--secondary btn--sm btn--block" href="loan-calculator.html">Estimate repayments</a>
+                        </div>
+                    </article>
+
+                    <article class="loan-card" data-filter-item data-categories="equipment">
+                        <div class="loan-card__head">
+                            <h3 class="loan-card__name">Equipment Finance</h3>
+                            <span class="badge badge--demo">Sample product</span>
+                        </div>
+                        <p class="loan-card__amount">
+                            <span>BDT 1,50,000 – 30,00,000</span>
+                            <span class="loan-card__amount-note">Sample range for a fictional demonstration product</span>
+                        </p>
+                        <dl class="fact-list">
+                            <div><dt>Indicative term</dt><dd>12 – 48 months</dd></div>
+                            <div><dt>Illustrative rate</dt><dd>Illustrative 15% – 24% p.a.</dd></div>
+                            <div><dt>Repayment frequency</dt><dd>Monthly</dd></div>
+                            <div><dt>Sample category</dt><dd>Equipment</dd></div>
+                        </dl>
+                        <p class="small muted">An illustrative option for machinery, refrigeration, sewing units or delivery equipment used by small producers.</p>
+                        <div>
+                            <h4 class="small">Sample document checklist</h4>
+                            <ul class="benefit-list">
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg><span>Quotation from a fictional supplier</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg><span>Sample business registration record</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg><span>Description of intended equipment use</span></li>
+                            </ul>
+                        </div>
+                        <div class="card__footer">
+                            <a class="btn btn--secondary btn--sm btn--block" href="loan-calculator.html">Estimate repayments</a>
+                        </div>
+                    </article>
+
+                    <article class="loan-card" data-filter-item data-categories="trade">
+                        <div class="loan-card__head">
+                            <h3 class="loan-card__name">Trade &amp; Inventory Support</h3>
+                            <span class="badge badge--demo">Sample product</span>
+                        </div>
+                        <p class="loan-card__amount">
+                            <span>BDT 75,000 – 20,00,000</span>
+                            <span class="loan-card__amount-note">Sample range for a fictional demonstration product</span>
+                        </p>
+                        <dl class="fact-list">
+                            <div><dt>Indicative term</dt><dd>3 – 12 months</dd></div>
+                            <div><dt>Illustrative rate</dt><dd>Illustrative 13% – 20% p.a.</dd></div>
+                            <div><dt>Repayment frequency</dt><dd>Monthly or weekly</dd></div>
+                            <div><dt>Sample category</dt><dd>Trade &amp; inventory</dd></div>
+                        </dl>
+                        <p class="small muted">A demonstration structure for distributors and retailers who need to stock up before a peak trading period.</p>
+                        <div>
+                            <h4 class="small">Sample document checklist</h4>
+                            <ul class="benefit-list">
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg><span>Sample purchase orders</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg><span>Illustrative stock turnover notes</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg><span>Fictional supplier references</span></li>
+                            </ul>
+                        </div>
+                        <div class="card__footer">
+                            <a class="btn btn--secondary btn--sm btn--block" href="loan-calculator.html">Estimate repayments</a>
+                        </div>
+                    </article>
+
+                    <article class="loan-card" data-filter-item data-categories="expansion">
+                        <div class="loan-card__head">
+                            <h3 class="loan-card__name">Expansion Loan Concept</h3>
+                            <span class="badge badge--demo">Sample product</span>
+                        </div>
+                        <p class="loan-card__amount">
+                            <span>BDT 3,00,000 – 50,00,000</span>
+                            <span class="loan-card__amount-note">Sample range for a fictional demonstration product</span>
+                        </p>
+                        <dl class="fact-list">
+                            <div><dt>Indicative term</dt><dd>18 – 60 months</dd></div>
+                            <div><dt>Illustrative rate</dt><dd>Illustrative 16% – 25% p.a.</dd></div>
+                            <div><dt>Repayment frequency</dt><dd>Monthly</dd></div>
+                            <div><dt>Sample category</dt><dd>Expansion</dd></div>
+                        </dl>
+                        <p class="small muted">A sample longer-term structure for opening an outlet, renovating premises or entering a new district.</p>
+                        <div>
+                            <h4 class="small">Sample document checklist</h4>
+                            <ul class="benefit-list">
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg><span>Illustrative business plan summary</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg><span>Sample historical statements</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg><span>Demonstration collateral discussion notes</span></li>
+                            </ul>
+                        </div>
+                        <div class="card__footer">
+                            <a class="btn btn--secondary btn--sm btn--block" href="loan-calculator.html">Estimate repayments</a>
+                        </div>
+                    </article>
+
+                    <article class="loan-card" data-filter-item data-categories="working-capital">
+                        <div class="loan-card__head">
+                            <h3 class="loan-card__name">Seasonal Enterprise Support</h3>
+                            <span class="badge badge--demo">Sample product</span>
+                        </div>
+                        <p class="loan-card__amount">
+                            <span>BDT 25,000 – 5,00,000</span>
+                            <span class="loan-card__amount-note">Sample range for a fictional demonstration product</span>
+                        </p>
+                        <dl class="fact-list">
+                            <div><dt>Indicative term</dt><dd>4 – 9 months</dd></div>
+                            <div><dt>Illustrative rate</dt><dd>Illustrative 12% – 18% p.a.</dd></div>
+                            <div><dt>Repayment frequency</dt><dd>Weekly or fortnightly</dd></div>
+                            <div><dt>Sample category</dt><dd>Working capital</dd></div>
+                        </dl>
+                        <p class="small muted">A demonstration structure for seasonal businesses such as agro-processing, fishing and craft production.</p>
+                        <div>
+                            <h4 class="small">Sample document checklist</h4>
+                            <ul class="benefit-list">
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg><span>Sample seasonal income notes</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg><span>Fictional cooperative reference</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg><span>Illustrative repayment plan</span></li>
+                            </ul>
+                        </div>
+                        <div class="card__footer">
+                            <a class="btn btn--secondary btn--sm btn--block" href="microfinance.html">Estimate repayments</a>
+                        </div>
+                    </article>
+
+                    <article class="loan-card" data-filter-item data-categories="trade">
+                        <div class="loan-card__head">
+                            <h3 class="loan-card__name">Invoice Bridge Concept</h3>
+                            <span class="badge badge--demo">Sample product</span>
+                        </div>
+                        <p class="loan-card__amount">
+                            <span>BDT 40,000 – 8,00,000</span>
+                            <span class="loan-card__amount-note">Sample range for a fictional demonstration product</span>
+                        </p>
+                        <dl class="fact-list">
+                            <div><dt>Indicative term</dt><dd>1 – 6 months</dd></div>
+                            <div><dt>Illustrative rate</dt><dd>Illustrative 15% – 21% p.a.</dd></div>
+                            <div><dt>Repayment frequency</dt><dd>Monthly</dd></div>
+                            <div><dt>Sample category</dt><dd>Trade &amp; inventory</dd></div>
+                        </dl>
+                        <p class="small muted">A sample short-term structure for service providers waiting on business invoices to be settled.</p>
+                        <div>
+                            <h4 class="small">Sample document checklist</h4>
+                            <ul class="benefit-list">
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg><span>Sample invoice copies</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg><span>Illustrative client list</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg><span>Demonstration payment history notes</span></li>
+                            </ul>
+                        </div>
+                        <div class="card__footer">
+                            <a class="btn btn--secondary btn--sm btn--block" href="loan-calculator.html">Estimate repayments</a>
+                        </div>
+                    </article>
+                </div>
+
+                
+<p class="empty-state" data-filter-empty hidden>No sample products match that filter. Try clearing the search box or choosing “All sample products”.</p>
+
+                                <p class="demo-note">
+                                    <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-info"></use></svg>
+                                    <span>Indicative rates describe fictional scenarios and do not reflect market pricing. Always compare the total repayment, not just the rate.</span>
+                                </p>
+                            </div>
+                        </section>
+
+                        <section class="section section--surface" aria-labelledby="criteria-title">
+                            <div class="container">
+                                <div class="split">
+                                    <div>
+                                        <span class="eyebrow">Eligibility criteria (examples)</span>
+                                        <h2 id="criteria-title">What a lender might ask to see</h2>
+                                        <p class="lead">These are examples of the information a real lender could request. They are not requirements of the demonstration, and passing them would not produce an approval.</p>
+                                        <ul class="checklist">
+                                            <li>
+                                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check-circle"></use></svg>
+                                                <span>
+                                                    <span class="checklist__label">Trading history</span>
+                                                    <span class="checklist__note">Often six to twelve months of records showing what the business actually earns.</span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check-circle"></use></svg>
+                                                <span>
+                                                    <span class="checklist__label">Business identification</span>
+                                                    <span class="checklist__note">Trade licence, registration or a local equivalent, depending on the jurisdiction.</span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check-circle"></use></svg>
+                                                <span>
+                                                    <span class="checklist__label">Cash-flow evidence</span>
+                                                    <span class="checklist__note">Bank statements, mobile wallet statements or a simple sales ledger.</span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check-circle"></use></svg>
+                                                <span>
+                                                    <span class="checklist__label">Owner identification</span>
+                                                    <span class="checklist__note">Standard identity documents, verified by the provider rather than by this demo.</span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check-circle"></use></svg>
+                                                <span>
+                                                    <span class="checklist__label">Security or guarantee, where applicable</span>
+                                                    <span class="checklist__note">Some products require an asset or a personal guarantee; terms always vary.</span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <figure class="figure-block">
+                                        <img src="../../../public/assets/images/photos/sme-workshop.jpg"
+                                             alt="Stock photograph of a craftsperson working at a bench in a small workshop."
+                                             width="960" height="640" loading="lazy" decoding="async">
+                                        <figcaption>Stock photograph, used for illustration only. No real business or approved limit is shown.</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section" aria-labelledby="frequency-title">
+                            <div class="container">
+                                <div data-component="section-heading"
+                                     data-id="frequency-title"
+                                     data-eyebrow="Repayment frequency"
+                                     data-title="The same loan, three rhythms"
+                                     data-lead="Changing only the repayment frequency changes the number of instalments and their size. The total cost can also change, because interest accrues per period."></div>
+
+                                <div class="table-wrap">
+                                    <table class="data-table">
+                                        <caption>Illustrative comparison: BDT 2,00,000 at 18% annual rate over 12 months</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Frequency</th>
+                                                <th scope="col">Instalments</th>
+                                                <th scope="col">Instalment amount</th>
+                                                <th scope="col">Estimated total repayment</th>
+                                                <th scope="col">Estimated interest</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Monthly</th>
+                                                <td class="num">12</td>
+                                                <td class="num">BDT 18,336</td>
+                                                <td class="num">BDT 2,20,032</td>
+                                                <td class="num">BDT 20,032</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Fortnightly</th>
+                                                <td class="num">26</td>
+                                                <td class="num">BDT 8,432</td>
+                                                <td class="num">BDT 2,19,229</td>
+                                                <td class="num">BDT 19,229</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Weekly</th>
+                                                <td class="num">52</td>
+                                                <td class="num">BDT 4,209</td>
+                                                <td class="num">BDT 2,18,885</td>
+                                                <td class="num">BDT 18,885</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="demo-note">
+                                    <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-info"></use></svg>
+                                    <span>More frequent payments reduce total interest slightly because the balance falls sooner. Fees, which are excluded here, could easily outweigh that difference.</span>
+                                </p>
+                            </div>
+                        </section>
+
+                        <section class="section section--surface" aria-labelledby="journey-title">
+                            <div class="container">
+                                <div data-component="section-heading"
+                                     data-id="journey-title"
+                                     data-eyebrow="Application journey"
+                                     data-title="How a real SME application usually unfolds"
+                                     data-lead="The demo mirrors a typical sequence so business owners know what to prepare at each stage."></div>
+
+                                <ol class="steps steps--balanced">
+                                    <li>
+                                        <span class="steps__number" aria-hidden="true">1</span>
+                                        <h3 class="steps__title">Define the need</h3>
+                                        <p class="steps__text">State the purpose and the amount in one sentence, with the income it should generate.</p>
+                                    </li>
+                                    <li>
+                                        <span class="steps__number" aria-hidden="true">2</span>
+                                        <h3 class="steps__title">Prepare records</h3>
+                                        <p class="steps__text">Assemble trading history, statements and identification before the first meeting.</p>
+                                    </li>
+                                    <li>
+                                        <span class="steps__number" aria-hidden="true">3</span>
+                                        <h3 class="steps__title">Compare structures</h3>
+                                        <p class="steps__text">Model at least two terms in the calculator and note both instalment and total cost.</p>
+                                    </li>
+                                    <li>
+                                        <span class="steps__number" aria-hidden="true">4</span>
+                                        <h3 class="steps__title">Formal assessment</h3>
+                                        <p class="steps__text">A licensed provider would verify documents, assess affordability and decide.</p>
+                                    </li>
+                                    <li>
+                                        <span class="steps__number" aria-hidden="true">5</span>
+                                        <h3 class="steps__title">Review the agreement</h3>
+                                        <p class="steps__text">Read the schedule, fees, late-payment terms and early-repayment conditions.</p>
+                                    </li>
+                                    <li>
+                                        <span class="steps__number" aria-hidden="true">6</span>
+                                        <h3 class="steps__title">Set up repayment discipline</h3>
+                                        <p class="steps__text">Choose a collection day and a buffer so a slow week does not cause a missed payment.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </section>
+
+                        <section class="section" aria-labelledby="responsible-title">
+                            <div class="container">
+                                <div class="section-head">
+                                    <span class="eyebrow">Responsible lending</span>
+                                    <h2 id="responsible-title">Questions worth asking before signing</h2>
+                                </div>
+                                <div class="callout-grid">
+                                    <div class="info-panel">
+                                        <h3>What is the total cost?</h3>
+                                        <p>Add every instalment across the whole term, then add every fee. That total — not the monthly figure — is what the loan costs.</p>
+                                    </div>
+                                    <div class="info-panel">
+                                        <h3>What happens if I am late?</h3>
+                                        <p>Late fees, penalty interest and reporting consequences should be explained before you sign, not after a missed payment.</p>
+                                    </div>
+                                    <div class="info-panel">
+                                        <h3>Can I repay early?</h3>
+                                        <p>Ask whether early repayment reduces interest and whether a settlement fee applies.</p>
+                                    </div>
+                                    <div class="info-panel">
+                                        <h3>Does the instalment fit the worst week?</h3>
+                                        <p>Test the instalment against your quietest trading week, not your best one.</p>
+                                    </div>
+                                </div>
+                                <p class="demo-note">
+                                    <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-alert"></use></svg>
+                                    <span>FinPulse is not a lender and cannot approve, decline or advise on any loan. Speak to a licensed provider or qualified adviser before borrowing.</span>
+                                </p>
+                            </div>
+                        </section>
+
+                        <div data-component="cta-section"
+                             data-title="Test any structure in the calculator"
+                             data-text="Enter an amount, an annual rate and a term to see estimated instalments, total repayment and interest — including how a zero-rate loan behaves."
+                             data-primary-label="Open the loan calculator"
+                             data-primary-href="loan-calculator.html"
+                             data-secondary-label="Read financial literacy guidance"
+                             data-secondary-href="financial-literacy.html"></div>
+                    </main>
+
+                    <div data-component="footer"></div>
+
+                    <script type="module" src="../../../public/js/main.js"></script>
+                </body>
+                </html>

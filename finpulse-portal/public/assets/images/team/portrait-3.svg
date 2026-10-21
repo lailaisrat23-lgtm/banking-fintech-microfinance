@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" role="img" aria-labelledby="p3">
+    <title id="p3">Illustrated avatar used for a fictional FinPulse team member</title>
+    <rect width="200" height="220" rx="14" fill="#e5eef7"/>
+    <circle cx="100" cy="88" r="40" fill="#1b4f85"/>
+    <path d="M40 220c0-33 27-60 60-60s60 27 60 60z" fill="#1b4f85"/>
+    <text x="100" y="102" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" text-anchor="middle">SK</text>
+</svg>

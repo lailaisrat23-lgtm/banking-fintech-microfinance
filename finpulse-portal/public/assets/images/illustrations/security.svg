@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="secTitle">
+    <title id="secTitle">Illustration of layered security: a shield with a lock, a verified device and an encrypted data flow</title>
+    <rect width="480" height="320" rx="18" fill="#123b4a"/>
+    <circle cx="240" cy="150" r="96" fill="#174b5d"/>
+    <circle cx="240" cy="150" r="70" fill="#1d5b6f"/>
+    <path d="M240 96l44 19v38c0 28-19 48-44 57-25-9-44-29-44-57v-38z" fill="#ffffff" opacity="0.96"/>
+    <rect x="222" y="146" width="36" height="30" rx="6" fill="#123b4a"/>
+    <path d="M230 146v-8a10 10 0 0120 0v8" fill="none" stroke="#123b4a" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="240" cy="160" r="4.5" fill="#4dd6a4"/>
+    <path d="M248 196h-16" stroke="#4dd6a4" stroke-width="4" stroke-linecap="round"/>
+    <g fill="none" stroke="#4dd6a4" stroke-width="3" stroke-linecap="round">
+        <path d="M76 150h44M100 128v44" opacity="0.85"/>
+        <path d="M360 150h44M382 128v44" opacity="0.85"/>
+    </g>
+    <rect x="46" y="216" width="150" height="60" rx="12" fill="#0d2f3c" stroke="#4f7280" stroke-width="2"/>
+    <rect x="62" y="234" width="70" height="9" rx="4.5" fill="#5f8492"/>
+    <rect x="62" y="252" width="112" height="7" rx="3.5" fill="#33606f"/>
+    <rect x="284" y="216" width="150" height="60" rx="12" fill="#0d2f3c" stroke="#4f7280" stroke-width="2"/>
+    <circle cx="306" cy="246" r="11" fill="#1d5b6f"/>
+    <path d="M301 246l3.4 3.4 6.6-7" fill="none" stroke="#4dd6a4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="326" y="236" width="86" height="8" rx="4" fill="#5f8492"/>
+    <rect x="326" y="252" width="64" height="7" rx="3.5" fill="#33606f"/>
+    <text x="240" y="300" fill="#cfe0e5" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">Demo security concept — no real data</text>
+</svg>

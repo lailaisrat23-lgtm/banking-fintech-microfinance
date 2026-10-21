@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="paySvcTitle">
+    <title id="paySvcTitle">Illustration of a payment overview: a merchant receiving money through several digital channels</title>
+    <rect width="480" height="320" rx="18" fill="#eef4f5"/>
+    <rect x="150" y="60" width="180" height="200" rx="14" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+    <text x="240" y="90" fill="#123b4a" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Collections overview</text>
+    <rect x="170" y="106" width="140" height="10" rx="5" fill="#e3f1ea"/>
+    <rect x="170" y="106" width="96" height="10" rx="5" fill="#087f5b"/>
+    <g>
+        <rect x="170" y="136" width="140" height="34" rx="8" fill="#eef4f5"/>
+        <rect x="182" y="148" width="70" height="8" rx="4" fill="#c7d8dd"/>
+        <text x="298" y="157" fill="#055f45" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="bold" text-anchor="end">BDT 12,400</text>
+        <rect x="170" y="178" width="140" height="34" rx="8" fill="#eef4f5"/>
+        <rect x="182" y="190" width="52" height="8" rx="4" fill="#c7d8dd"/>
+        <text x="298" y="199" fill="#17252c" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="bold" text-anchor="end">BDT 3,150</text>
+        <rect x="170" y="220" width="140" height="24" rx="12" fill="#123b4a"/>
+        <text x="240" y="236" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Illustrative data</text>
+    </g>
+    <g>
+        <circle cx="76" cy="108" r="26" fill="#e3f1ea"/>
+        <path d="M68 100h16v16H68z" fill="none" stroke="#0f6b3f" stroke-width="2.4"/>
+        <circle cx="76" cy="196" r="26" fill="#e5eef7"/>
+        <path d="M64 196h24M76 186v20" stroke="#1b4f85" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="404" cy="108" r="26" fill="#e3eef0"/>
+        <path d="M394 108l8 8 14-16" fill="none" stroke="#123b4a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="404" cy="196" r="26" fill="#e3f1ea"/>
+        <path d="M404 184v20M396 192l8-8 8 8" fill="none" stroke="#0f6b3f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <path d="M104 116l44 34M104 188l44-28M376 116l-44 34M376 188l-44-28" stroke="#9fb2b8" stroke-width="2" stroke-dasharray="5 5"/>
+</svg>

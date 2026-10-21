@@ -1,0 +1,45 @@
+<header class="site-header">
+    <div class="container site-header__inner">
+        <a class="brand" href="home.html">
+            <img class="brand__mark" src="../../../public/assets/images/branding/logo.svg" alt="" width="36" height="36">
+            <span class="brand__text">
+                <span class="brand__name">FinPulse</span>
+                <span class="brand__tag">Micro-Lending &amp; SME Payments</span>
+            </span>
+        </a>
+
+        <nav class="primary-nav" id="primary-navigation" aria-label="Primary">
+            <ul class="nav-list">
+                <li><a class="nav-link" href="home.html" data-nav="home">Home</a></li>
+                <li class="nav-item--has-menu">
+                    <button class="nav-link nav-disclosure" type="button" aria-expanded="false" aria-controls="services-submenu" data-disclosure-button data-nav="services">
+                        <span>Services</span>
+                        <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                    </button>
+                    <ul class="nav-submenu" id="services-submenu" data-disclosure-panel hidden>
+                        <li><a class="nav-link" href="services.html" data-nav="services">All services</a></li>
+                        <li><a class="nav-link" href="digital-payments.html" data-nav="digital-payments">Digital payments</a></li>
+                        <li><a class="nav-link" href="microfinance.html" data-nav="microfinance">Microfinance</a></li>
+                        <li><a class="nav-link" href="sme-loans.html" data-nav="sme-loans">SME loans</a></li>
+                        <li><a class="nav-link" href="p2p-lending.html" data-nav="p2p-lending">P2P lending concept</a></li>
+                        <li><a class="nav-link" href="financial-literacy.html" data-nav="financial-literacy">Financial literacy</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link" href="business-solutions.html" data-nav="solutions">Solutions</a></li>
+                <li><a class="nav-link" href="loan-calculator.html" data-nav="calculator">Calculator</a></li>
+                <li><a class="nav-link" href="how-it-works.html" data-nav="how-it-works">How it works</a></li>
+                <li><a class="nav-link" href="dashboard-demo.html" data-nav="dashboard">Dashboard</a></li>
+                <li><a class="nav-link" href="about.html" data-nav="about">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="site-header__actions">
+            <a class="btn btn--primary btn--sm header-cta" href="contact.html" data-nav="contact">Contact us</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="nav-toggle__icon" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="nav-toggle__label">Menu</span>
+            </button>
+        </div>
+    </div>
+</header>
+<button class="drawer-backdrop" type="button" data-nav-backdrop aria-label="Close navigation menu" hidden></button>

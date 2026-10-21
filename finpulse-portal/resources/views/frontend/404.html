@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Not Found (404) | FinPulse Demo</title>
+    <meta name="description" content="That page could not be found. Use these links to reach the FinPulse demo homepage, services, calculator and dashboard.">
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="https://finpulse.example/resources/views/frontend/404.html">
+    <meta name="theme-color" content="#123b4a">
+    <meta name="components-base" content="../../../resources/views/components/">
+    <link rel="icon" href="../../../public/assets/images/branding/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../../public/css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div data-component="header" data-active="404"></div>
+
+    <main id="main" tabindex="-1">
+        <section class="error-page" aria-labelledby="page-title">
+            <div class="container container--narrow">
+                <span class="error-page__code" aria-hidden="true">404</span>
+                <h1 id="page-title">This page is not part of the demonstration</h1>
+                <p class="lead">The link may be out of date, or the address may contain a typo. Nothing has gone wrong with your account, because this demonstration has no accounts.</p>
+
+                <div class="error-page__actions">
+                    <a class="btn btn--primary" href="home.html">Go to the homepage</a>
+                    <a class="btn btn--secondary" href="services.html">Browse services</a>
+                </div>
+
+                <div class="error-page__links">
+                    <a class="card" href="digital-payments.html">
+                        <span class="icon-tile icon-tile--accent"><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-qr"></use></svg></span>
+                        <strong>Digital payments</strong>
+                        <span class="small muted">Merchant collections, settlement and reconciliation concepts.</span>
+                    </a>
+                    <a class="card" href="loan-calculator.html">
+                        <span class="icon-tile"><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-calculator"></use></svg></span>
+                        <strong>Loan calculator</strong>
+                        <span class="small muted">Estimate an instalment, total repayment and interest.</span>
+                    </a>
+                    <a class="card" href="dashboard-demo.html">
+                        <span class="icon-tile icon-tile--green"><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chart"></use></svg></span>
+                        <strong>Dashboard demo</strong>
+                        <span class="small muted">A static view of sample balances and transactions.</span>
+                    </a>
+                    <a class="card" href="faq.html">
+                        <span class="icon-tile icon-tile--accent"><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-info"></use></svg></span>
+                        <strong>Frequently asked questions</strong>
+                        <span class="small muted">Payments, calculations, privacy and demo limits.</span>
+                    </a>
+                </div>
+
+                <p class="demo-note">
+                    <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-info"></use></svg>
+                    <span>FinPulse is a fictional demonstration brand. No financial service is offered anywhere on this site.</span>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <div data-component="footer"></div>
+
+    <script type="module" src="../../../public/js/main.js"></script>
+</body>
+</html>

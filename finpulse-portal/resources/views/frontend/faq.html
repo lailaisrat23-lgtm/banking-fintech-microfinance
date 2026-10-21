@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frequently Asked Questions | FinPulse Demo</title>
+    <meta name="description" content="Answers about the FinPulse demo: payment workflows, loan calculations, application steps, repayment schedules, data privacy, marketplace risk and demo limitations.">
+    <link rel="canonical" href="https://finpulse.example/resources/views/frontend/faq.html">
+    <meta name="theme-color" content="#123b4a">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FinPulse (fictional demo)">
+    <meta property="og:title" content="Frequently Asked Questions | FinPulse Demo">
+    <meta property="og:description" content="Twelve questions about payments, calculations, privacy and marketplace risk in a fictional fintech demonstration.">
+    <meta property="og:url" content="https://finpulse.example/resources/views/frontend/faq.html">
+    <meta property="og:image" content="https://finpulse.example/public/assets/images/photos/advisory-meeting.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="components-base" content="../../../resources/views/components/">
+    <link rel="icon" href="../../../public/assets/images/branding/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../../public/css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div data-component="header" data-active="faq"></div>
+    <div data-component="breadcrumbs" data-trail="Home:home.html|FAQ"></div>
+
+    <main id="main" tabindex="-1">
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <span class="eyebrow">Support</span>
+                <h1 id="page-title">Frequently asked questions</h1>
+                <p class="lead">Twelve questions about how the demonstration behaves. Use the category filters to narrow the list, or the search box to find a word.</p>
+                <p><span class="badge badge--demo">Answers describe a fictional platform</span></p>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="faq-list-title">
+            <div class="container" data-filters>
+                <h2 id="faq-list-title" class="sr-only">Questions and answers</h2>
+
+                <div class="filter-bar">
+                    <div class="chip-group" role="group" aria-label="Filter questions by topic">
+                        <button class="chip" type="button" data-filter="all" aria-pressed="true">All questions</button>
+                        <button class="chip" type="button" data-filter="platform" aria-pressed="false">About FinPulse</button>
+                        <button class="chip" type="button" data-filter="payments" aria-pressed="false">Payments</button>
+                        <button class="chip" type="button" data-filter="loans" aria-pressed="false">Loans &amp; calculations</button>
+                        <button class="chip" type="button" data-filter="marketplace" aria-pressed="false">Marketplace risk</button>
+                        <button class="chip" type="button" data-filter="privacy" aria-pressed="false">Data &amp; privacy</button>
+                    </div>
+                    <div class="filter-search">
+                        <div class="field">
+                            <label class="field__label" for="faq-search">Search questions</label>
+                            <input class="input" type="search" id="faq-search" data-filter-search
+                                   placeholder="For example: OTP or instalment" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+
+                <p class="filter-count" data-filter-count aria-live="polite"></p>
+
+                <div class="accordion" data-accordion data-filter-list>
+                    <div class="accordion__item" data-filter-item data-categories="platform">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>Is FinPulse a real financial institution?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>No. FinPulse is a fictional brand created for a front-end design demonstration. It is not a bank, lender, microfinance institution or payment provider, and it holds no licences or regulatory approvals.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item" data-filter-item data-categories="payments">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>Can this website move or receive real money?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>No. Every balance, transaction, payment status and settlement figure on this site is static sample data. There is no payment gateway connection, no account connection and no server that could process a transaction.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item" data-filter-item data-categories="loans">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>How accurate is the loan calculator?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>The calculator applies a standard amortisation formula to the numbers you enter, using the selected payment frequency. It excludes processing fees, taxes, insurance and any other charges, so results are estimates for learning purposes only, not quotations.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item" data-filter-item data-categories="loans">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>What happens if I enter a zero interest rate?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>When the annual rate is zero, the calculator divides the loan amount by the number of instalments so the total repayment equals the amount you entered. Interest is shown as BDT 0 rather than a formula result.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item" data-filter-item data-categories="loans">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>Do sample loan products mean I qualify for financing?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>No. Sample products and eligibility notes exist to show how information could be presented. They are not offers, pre-approvals or statements of eligibility for any real product.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item" data-filter-item data-categories="marketplace">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>What risks does the marketplace concept describe?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>The hypothetical marketplace section explains default risk, concentration risk, liquidity risk and the possibility of losing the full amount contributed. Returns are never guaranteed, and all opportunities shown are fictional.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item" data-filter-item data-categories="marketplace">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>Can I expect a particular return from the marketplace?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>No. Any rate shown is an illustrative figure for a fictional scenario. It is not a projection, promise or estimate of real performance, and no real investment product is offered.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item" data-filter-item data-categories="privacy">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>What happens to information I type into the demo form?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>Nothing is transmitted or stored. The contact form validates entries in your browser and then shows a demonstration confirmation. No email is sent, no support ticket is created and no data leaves the page.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item" data-filter-item data-categories="privacy">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>Will FinPulse ask for my PIN, OTP or card security code?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>Never. This demo never requests bank passwords, PINs, one-time passwords, card security codes or payment credentials, and no legitimate support agent should ask for them either.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item" data-filter-item data-categories="platform">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>Why do I need a local server to view the site?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>Shared page fragments are loaded with fetch, which browsers block for pages opened directly from a file path. Serve the folder over HTTP, for example with PHP or Python, as described in the README.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item" data-filter-item data-categories="platform">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>Is the demo built for accessibility?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>The build targets WCAG 2.2 AA and follows AAA techniques where practical: semantic landmarks, visible focus states, keyboard-operable widgets, reduced-motion support and text labels alongside status colours. Formal AAA conformance has not been certified.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item" data-filter-item data-categories="payments">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>How long would a settlement take?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>Settlement timelines are illustrative. The digital payments page shows a sample timeline purely to demonstrate how gross amount, fee and expected date could be presented.</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+<p class="empty-state" data-filter-empty hidden>No questions match that search. Try another word or choose â€œAll questionsâ€.</p>
+
+                <div class="info-panel callout-spaced">
+                    <h3>Still stuck?</h3>
+                    <p>The contact page has a demonstration enquiry form that validates your input in the browser and then explains why nothing is actually sent. The <a href="privacy-policy.html">privacy policy</a> and <a href="terms-of-service.html">terms of service</a> drafts describe the demonstration's limits in more detail.</p>
+                </div>
+            </div>
+        </section>
+
+        <div data-component="cta-section"
+             data-title="Send a demonstration enquiry"
+             data-text="The contact form shows accessible validation states and an honest demo-only confirmation. No message is transmitted or stored."
+             data-primary-label="Open the contact page"
+             data-primary-href="contact.html"
+             data-secondary-label="Read the privacy policy draft"
+             data-secondary-href="privacy-policy.html"></div>
+    </main>
+
+    <div data-component="footer"></div>
+
+    <script type="module" src="../../../public/js/main.js"></script>
+</body>
+</html>

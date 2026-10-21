@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How It Works — Merchant, SME, Microfinance &amp; Lender Journeys | FinPulse Demo</title>
+    <meta name="description" content="Step-by-step journeys for merchants collecting payments, SMEs exploring financing, microfinance customers reviewing schedules and prospective marketplace lenders.">
+    <link rel="canonical" href="https://finpulse.example/resources/views/frontend/how-it-works.html">
+    <meta name="theme-color" content="#123b4a">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FinPulse (fictional demo)">
+    <meta property="og:title" content="How It Works — Four FinPulse Journeys (Demo)">
+    <meta property="og:description" content="Four separate step-by-step journeys for merchants, SMEs, microfinance customers and marketplace lenders.">
+    <meta property="og:url" content="https://finpulse.example/resources/views/frontend/how-it-works.html">
+    <meta property="og:image" content="https://finpulse.example/public/assets/images/photos/merchant-counter.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="components-base" content="../../../resources/views/components/">
+    <link rel="icon" href="../../../public/assets/images/branding/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../../public/css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div data-component="header" data-active="how-it-works"></div>
+    <div data-component="breadcrumbs" data-trail="Home:home.html|How it works"></div>
+
+    <main id="main" tabindex="-1">
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <span class="eyebrow">How it works</span>
+                <h1 id="page-title">Four audiences, four different journeys</h1>
+                <p class="lead">A merchant, an SME owner, a microfinance customer and a prospective lender each need different information. This page keeps the journeys separate instead of forcing one generic sequence.</p>
+                <p><span class="badge badge--demo">Fictional demonstration</span></p>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="tabs-title">
+            <div class="container">
+                <h2 id="tabs-title" class="sr-only">Choose a journey</h2>
+
+                <div data-tabs>
+                    <div class="tabs__list" role="tablist" aria-label="Audience journeys">
+                        <button class="tab" type="button" role="tab" id="tab-merchant" aria-controls="panel-merchant" aria-selected="true">Merchants</button>
+                        <button class="tab" type="button" role="tab" id="tab-sme" aria-controls="panel-sme" aria-selected="false">SMEs</button>
+                        <button class="tab" type="button" role="tab" id="tab-micro" aria-controls="panel-micro" aria-selected="false">Microfinance</button>
+                        <button class="tab" type="button" role="tab" id="tab-lender" aria-controls="panel-lender" aria-selected="false">Marketplace lenders</button>
+                    </div>
+
+                    <div class="tab-panel" role="tabpanel" id="panel-merchant" aria-labelledby="tab-merchant" tabindex="0">
+                        <div class="split">
+                            <div>
+                                <span class="eyebrow">Merchants collecting payments</span>
+                                <h2>A collection flow that ends with a readable day</h2>
+                                <p class="lead">The merchant's question is simple: did the money arrive, and what is still outstanding?</p>
+                                <figure class="figure-block">
+                                    <img src="../../../public/assets/images/photos/merchant-counter.jpg"
+                                         alt="Stock photograph of a customer paying at a shop counter while staff complete the sale."
+                                         width="960" height="640" loading="lazy" decoding="async">
+                                </figure>
+                            </div>
+                            <ol class="timeline">
+                                <li>
+                                    <span class="timeline__marker" aria-hidden="true">1</span>
+                                    <div class="timeline__body">
+                                        <h3>Accept the payment</h3>
+                                        <p>QR at the counter, a payment link for a remote order, or a card terminal at a larger shop.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="timeline__marker" aria-hidden="true">2</span>
+                                    <div class="timeline__body">
+                                        <h3>Read the status</h3>
+                                        <p>A written label explains whether the payment is completed, pending or failed.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="timeline__marker" aria-hidden="true">3</span>
+                                    <div class="timeline__body">
+                                        <h3>Check the settlement</h3>
+                                        <p>Gross amount, illustrative fee and expected date are shown separately.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="timeline__marker" aria-hidden="true">4</span>
+                                    <div class="timeline__body">
+                                        <h3>Reconcile by exception</h3>
+                                        <p>Only unmatched items need attention at the end of the day.</p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                        <p><a class="btn btn--secondary btn--sm" href="digital-payments.html">Explore digital payments</a></p>
+                    </div>
+
+                    <div class="tab-panel" role="tabpanel" id="panel-sme" aria-labelledby="tab-sme" tabindex="0" hidden>
+                        <div class="split">
+                            <div>
+                                <span class="eyebrow">SMEs exploring financing</span>
+                                <h2>From a vague need to a comparable structure</h2>
+                                <p class="lead">The SME's question is about trade-offs: what does a longer term cost, and can the instalment survive a slow month?</p>
+                                <figure class="figure-block">
+                                    <img src="../../../public/assets/images/photos/sme-workshop.jpg"
+                                         alt="Stock photograph of a craftsperson working at a bench in a small workshop."
+                                         width="960" height="640" loading="lazy" decoding="async">
+                                </figure>
+                            </div>
+                            <ol class="timeline">
+                                <li>
+                                    <span class="timeline__marker" aria-hidden="true">1</span>
+                                    <div class="timeline__body">
+                                        <h3>Define the purpose</h3>
+                                        <p>Equipment, stock, a new outlet or simply timing between payments.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="timeline__marker" aria-hidden="true">2</span>
+                                    <div class="timeline__body">
+                                        <h3>Compare sample structures</h3>
+                                        <p>Filter by category and compare term, rate and frequency side by side.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="timeline__marker" aria-hidden="true">3</span>
+                                    <div class="timeline__body">
+                                        <h3>Model the instalment</h3>
+                                        <p>Use the calculator to see both the instalment and the total cost.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="timeline__marker" aria-hidden="true">4</span>
+                                    <div class="timeline__body">
+                                        <h3>Prepare documents</h3>
+                                        <p>Assemble trading records before any real advisory conversation.</p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                        <p><a class="btn btn--secondary btn--sm" href="sme-loans.html">Compare sample products</a></p>
+                    </div>
+
+                    <div class="tab-panel" role="tabpanel" id="panel-micro" aria-labelledby="tab-micro" tabindex="0" hidden>
+                        <div class="split">
+                            <div>
+                                <span class="eyebrow">Microfinance customers</span>
+                                <h2>Repayment timing that follows the trading week</h2>
+                                <p class="lead">A micro-entrepreneur needs to know the instalment date, the amount, and what happens in a bad week.</p>
+                                <figure class="figure-block">
+                                    <img src="../../../public/assets/images/photos/microfinance-repayments.jpg"
+                                         alt="Stock photograph of a shopkeeper and an assistant working behind the counter of a small shop."
+                                         width="960" height="640" loading="lazy" decoding="async">
+                                </figure>
+                            </div>
+                            <ol class="timeline">
+                                <li>
+                                    <span class="timeline__marker" aria-hidden="true">1</span>
+                                    <div class="timeline__body">
+                                        <h3>Review the schedule</h3>
+                                        <p>Weekly or fortnightly instalments matched to income rhythm.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="timeline__marker" aria-hidden="true">2</span>
+                                    <div class="timeline__body">
+                                        <h3>Check total cost</h3>
+                                        <p>The sum of all instalments, not just the amount due each period.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="timeline__marker" aria-hidden="true">3</span>
+                                    <div class="timeline__body">
+                                        <h3>Plan a buffer</h3>
+                                        <p>Set aside a small reserve so one slow week does not become a missed payment.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="timeline__marker" aria-hidden="true">4</span>
+                                    <div class="timeline__body">
+                                        <h3>Track repayments</h3>
+                                        <p>Keep a written record of each payment and its date.</p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                        <p><a class="btn btn--secondary btn--sm" href="microfinance.html">Review microfinance content</a></p>
+                    </div>
+
+                    <div class="tab-panel" role="tabpanel" id="panel-lender" aria-labelledby="tab-lender" tabindex="0" hidden>
+                        <div class="split">
+                            <div>
+                                <span class="eyebrow">Prospective marketplace lenders</span>
+                                <h2>Understanding the downside first</h2>
+                                <p class="lead">Anyone considering lending should be able to state the maximum they could lose before looking at any potential return.</p>
+                                <figure class="figure-block">
+                                    <img src="../../../public/assets/images/photos/advisory-meeting.jpg"
+                                         alt="Stock photograph of two people discussing documents at a desk beside an open laptop."
+                                         width="960" height="640" loading="lazy" decoding="async">
+                                </figure>
+                            </div>
+                            <ol class="timeline">
+                                <li>
+                                    <span class="timeline__marker" aria-hidden="true">1</span>
+                                    <div class="timeline__body">
+                                        <h3>Read the risk disclosure</h3>
+                                        <p>Default, concentration, liquidity and platform risk explained in plain terms.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="timeline__marker" aria-hidden="true">2</span>
+                                    <div class="timeline__body">
+                                        <h3>Set an exposure limit</h3>
+                                        <p>Decide what could be lost entirely without affecting essential spending.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="timeline__marker" aria-hidden="true">3</span>
+                                    <div class="timeline__body">
+                                        <h3>Spread contributions</h3>
+                                        <p>Many small amounts rather than one large commitment.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="timeline__marker" aria-hidden="true">4</span>
+                                    <div class="timeline__body">
+                                        <h3>Reassess periodically</h3>
+                                        <p>Review records and adjust expectations rather than assuming steady returns.</p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                        <p><a class="btn btn--secondary btn--sm" href="p2p-lending.html">Read the marketplace concept</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--surface" aria-labelledby="shared-title">
+            <div class="container">
+                <div data-component="section-heading"
+                     data-id="shared-title"
+                     data-eyebrow="Common principles"
+                     data-title="What every journey has in common"
+                     data-lead="Whatever the audience, the same four principles apply. They are written into the demonstration's content and interaction design."></div>
+                <div class="callout-grid">
+                    <div class="info-panel">
+                        <h3>Say the cost in full</h3>
+                        <p>Total repayment, all fees, and the consequences of a missed payment — in writing and before any commitment.</p>
+                    </div>
+                    <div class="info-panel">
+                        <h3>Never hide a status</h3>
+                        <p>Pending, completed and failed are written out. Colour is only a secondary cue.</p>
+                    </div>
+                    <div class="info-panel">
+                        <h3>Respect attention</h3>
+                        <p>Short paragraphs, clear headings and consistent card layouts so screens can be scanned quickly.</p>
+                    </div>
+                    <div class="info-panel">
+                        <h3>Admit the limits</h3>
+                        <p>Every page states what the demonstration cannot do: no applications, no payments, no investment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div data-component="cta-section"
+             data-title="Start with the calculator"
+             data-text="Numbers make the trade-offs concrete. Test an amount, a rate and a term before reading the advice pages."
+             data-primary-label="Open the loan calculator"
+             data-primary-href="loan-calculator.html"
+             data-secondary-label="See the dashboard demo"
+             data-secondary-href="dashboard-demo.html"></div>
+    </main>
+
+    <div data-component="footer"></div>
+
+    <script type="module" src="../../../public/js/main.js"></script>
+</body>
+</html>

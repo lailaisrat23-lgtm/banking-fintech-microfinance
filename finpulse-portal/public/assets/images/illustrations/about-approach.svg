@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="aboutTitle">
+    <title id="aboutTitle">Illustration of an inclusive approach: two partners meeting beside a map of service regions</title>
+    <rect width="480" height="320" rx="18" fill="#eef4f5"/>
+    <circle cx="150" cy="150" r="86" fill="#e3eef0"/>
+    <circle cx="150" cy="150" r="58" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+    <circle cx="196" cy="122" r="34" fill="#e3f1ea" stroke="#b9d3c8" stroke-width="2"/>
+    <path d="M128 132a30 30 0 0130-22 30 30 0 0122 10" fill="none" stroke="#123b4a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M120 170h64" stroke="#9fb2b8" stroke-width="4" stroke-linecap="round"/>
+    <path d="M120 186h44" stroke="#d5dfe3" stroke-width="4" stroke-linecap="round"/>
+    <rect x="252" y="66" width="192" height="188" rx="14" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+    <text x="270" y="92" fill="#123b4a" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="bold">Focus markets (demo)</text>
+    <g fill="#e3f1ea">
+        <circle cx="296" cy="132" r="16"/>
+        <circle cx="352" cy="158" r="12"/>
+        <circle cx="404" cy="128" r="10"/>
+        <circle cx="330" cy="206" r="18"/>
+        <circle cx="392" cy="196" r="14"/>
+    </g>
+    <g fill="#087f5b">
+        <circle cx="296" cy="132" r="5"/>
+        <circle cx="352" cy="158" r="4"/>
+        <circle cx="404" cy="128" r="3.5"/>
+        <circle cx="330" cy="206" r="6"/>
+        <circle cx="392" cy="196" r="4.5"/>
+    </g>
+    <path d="M296 132l56 26M352 158l52-30M330 206l62-10" stroke="#9fb2b8" stroke-width="1.8" stroke-dasharray="4 4"/>
+    <rect x="270" y="232" width="156" height="8" rx="4" fill="#e2eaec"/>
+    <rect x="30" y="278" width="414" height="8" rx="4" fill="#d5e2e6"/>
+</svg>

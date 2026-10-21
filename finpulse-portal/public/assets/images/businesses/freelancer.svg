@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" role="img" aria-labelledby="freeTitle">
+    <title id="freeTitle">Illustration of a freelancer working on a laptop with an invoice and a bank transfer note</title>
+    <rect width="360" height="220" rx="16" fill="#eef4f5"/>
+    <rect x="52" y="118" width="180" height="12" rx="6" fill="#123b4a"/>
+    <path d="M70 130h144l-16-58H86z" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+    <rect x="96" y="88" width="92" height="26" rx="4" fill="#e3f1ea"/>
+    <rect x="52" y="142" width="180" height="8" rx="4" fill="#d5e2e6"/>
+    <rect x="256" y="56" width="64" height="82" rx="8" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+    <rect x="268" y="70" width="40" height="7" rx="3.5" fill="#c7d8dd"/>
+    <rect x="268" y="84" width="30" height="6" rx="3" fill="#e2eaec"/>
+    <rect x="268" y="96" width="36" height="6" rx="3" fill="#e2eaec"/>
+    <rect x="268" y="114" width="40" height="14" rx="7" fill="#087f5b"/>
+    <rect x="236" y="160" width="84" height="32" rx="8" fill="#e3f1ea"/>
+    <text x="278" y="181" fill="#055f45" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Paid (demo)</text>
+</svg>

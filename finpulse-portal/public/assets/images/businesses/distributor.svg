@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" role="img" aria-labelledby="distTitle">
+    <title id="distTitle">Illustration of a small distributor managing delivery notes and stock movements</title>
+    <rect width="360" height="220" rx="16" fill="#eef4f5"/>
+    <rect x="44" y="76" width="120" height="88" rx="8" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+    <rect x="44" y="76" width="120" height="20" rx="8" fill="#123b4a"/>
+    <g fill="#e2eaec">
+        <rect x="60" y="110" width="88" height="7" rx="3.5"/>
+        <rect x="60" y="126" width="70" height="7" rx="3.5"/>
+        <rect x="60" y="142" width="80" height="7" rx="3.5"/>
+    </g>
+    <path d="M180 118h44" stroke="#9fb2b8" stroke-width="2.4" stroke-dasharray="5 5"/>
+    <path d="M216 108l12 10-12 10" fill="none" stroke="#9fb2b8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="240" y="92" width="76" height="56" rx="8" fill="#e3f1ea"/>
+    <circle cx="262" cy="140" r="9" fill="#123b4a"/>
+    <circle cx="296" cy="140" r="9" fill="#123b4a"/>
+    <path d="M240 92h44v34h-44z" fill="#087f5b"/>
+    <rect x="252" y="104" width="20" height="10" rx="3" fill="#ffffff"/>
+    <rect x="44" y="182" width="272" height="8" rx="4" fill="#d5e2e6"/>
+</svg>

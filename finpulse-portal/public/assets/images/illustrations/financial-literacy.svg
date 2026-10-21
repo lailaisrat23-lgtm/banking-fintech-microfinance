@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="flTitle">
+    <title id="flTitle">Illustration of a financial literacy lesson showing a book, a simple interest diagram and a budget checklist</title>
+    <rect width="480" height="320" rx="18" fill="#eef4f5"/>
+    <path d="M64 96h140a20 20 0 0120 20v128H84a20 20 0 01-20-20z" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+    <path d="M224 116a20 20 0 0120-20h140v148H244a20 20 0 01-20-20z" fill="#e3f1ea" stroke="#b9d3c8" stroke-width="2"/>
+    <rect x="86" y="126" width="104" height="9" rx="4.5" fill="#c7d8dd"/>
+    <rect x="86" y="146" width="92" height="8" rx="4" fill="#e2eaec"/>
+    <rect x="86" y="164" width="104" height="8" rx="4" fill="#e2eaec"/>
+    <rect x="86" y="182" width="70" height="8" rx="4" fill="#e2eaec"/>
+    <circle cx="248" cy="150" r="20" fill="#087f5b" opacity="0.18"/>
+    <text x="248" y="156" fill="#055f45" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">%</text>
+    <rect x="244" y="182" width="116" height="8" rx="4" fill="#b9d3c8"/>
+    <rect x="244" y="200" width="94" height="8" rx="4" fill="#cfe3dc"/>
+    <rect x="40" y="262" width="400" height="8" rx="4" fill="#d5e2e6"/>
+    <g>
+        <rect x="300" y="60" width="140" height="160" rx="14" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+        <text x="316" y="86" fill="#123b4a" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="bold">Budget checklist</text>
+        <g fill="none" stroke="#087f5b" stroke-width="2">
+            <rect x="316" y="100" width="12" height="12" rx="3"/>
+            <rect x="316" y="126" width="12" height="12" rx="3"/>
+            <rect x="316" y="152" width="12" height="12" rx="3"/>
+            <rect x="316" y="178" width="12" height="12" rx="3"/>
+        </g>
+        <path d="M318 106l3 3 5-6M318 132l3 3 5-6" stroke="#0f6b3f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="#e2eaec">
+            <rect x="338" y="101" width="80" height="8" rx="4"/>
+            <rect x="338" y="127" width="64" height="8" rx="4"/>
+            <rect x="338" y="153" width="72" height="8" rx="4"/>
+            <rect x="338" y="179" width="52" height="8" rx="4"/>
+        </g>
+    </g>
+</svg>

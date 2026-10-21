@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FinPulse — Smarter Payments, Accessible Finance for Small Business</title>
+    <meta name="description" content="Explore FinPulse, a fictional fintech demo for Bangladesh: digital payment concepts, microfinance repayment examples, SME loan structures, a working loan calculator and a sample financial dashboard.">
+    <link rel="canonical" href="https://finpulse.example/resources/views/frontend/home.html">
+    <meta name="theme-color" content="#123b4a">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FinPulse (fictional demo)">
+    <meta property="og:title" content="FinPulse — Smarter Payments, Accessible Finance for Small Business">
+    <meta property="og:description" content="A fictional fintech demonstration of digital payments, microfinance, SME lending, a loan calculator and a sample dashboard.">
+    <meta property="og:url" content="https://finpulse.example/resources/views/frontend/home.html">
+    <meta property="og:image" content="https://finpulse.example/public/assets/images/hero/hero-dashboard.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="components-base" content="../../../resources/views/components/">
+    <link rel="icon" href="../../../public/assets/images/branding/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../../public/css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div data-component="announcement-bar"></div>
+    <div data-component="header" data-active="home"></div>
+
+    <main id="main" tabindex="-1">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero__inner">
+                <div>
+                    <p><span class="badge badge--demo">Fictional demo platform</span></p>
+                    <h1 id="hero-title">Smarter payments. Accessible finance. Stronger businesses.</h1>
+                    <p class="hero__lead">FinPulse brings business payments, microfinance, SME financing and financial learning into one clear digital experience — designed for small businesses in Bangladesh and other emerging markets.</p>
+                    <div class="hero__actions">
+                        <a class="btn btn--primary" href="services.html">Explore the services</a>
+                        <a class="btn btn--secondary" href="loan-calculator.html">Try the loan calculator</a>
+                    </div>
+                    <ul class="hero__meta">
+                        <li>
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check-circle"></use></svg>
+                            Illustrative data only
+                        </li>
+                        <li>
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check-circle"></use></svg>
+                            No real payments can be made
+                        </li>
+                        <li>
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check-circle"></use></svg>
+                            Keyboard and screen-reader friendly
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero__media">
+                    <figure class="hero__figure">
+                        <img src="../../../public/assets/images/hero/hero-dashboard.svg"
+                             alt="Illustration of a FinPulse demo dashboard showing a sample balance of BDT 2,48,500 monthly incoming and outgoing totals, a twelve-month cash-flow chart and two example transactions."
+                             width="660" height="480" fetchpriority="high" decoding="async">
+                        <figcaption class="hero__caption">Dashboard preview. All balances, charts and transactions are fictional sample data.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <div data-component="trust-section"></div>
+        <div data-component="statistics"></div>
+
+        <section class="section" aria-labelledby="services-overview-title">
+            <div class="container">
+                <div data-component="section-heading"
+                     data-id="services-overview-title"
+                     data-eyebrow="Core services"
+                     data-title="Five ways FinPulse supports small business finance"
+                     data-lead="Start with the area that matches your business today. Each path explains the concept, shows sample figures and states plainly what is demonstration content."></div>
+
+                <div class="grid grid--2">
+                    <article class="service-card">
+                        <div class="card__topline">
+                            <span class="icon-tile icon-tile--accent">
+                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-qr"></use></svg>
+                            </span>
+                        <span class="badge badge--info">Payments</span>
+                        </div>
+                        <h3 class="service-card__title">Digital payments and collections</h3>
+                        <p class="service-card__text">Show how QR acceptance, payment links, settlements and reconciliation could look for a small shop or online seller.</p>
+                        <div class="service-card__footer">
+                            <a class="link-arrow" href="digital-payments.html">
+                                See payment workflows
+                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-arrow-right"></use></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="card__topline">
+                            <span class="icon-tile icon-tile--green">
+                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-users"></use></svg>
+                            </span>
+                            <span class="badge badge--info">Financing</span>
+                        </div>
+                        <h3 class="service-card__title">Microfinance for micro-entrepreneurs</h3>
+                        <p class="service-card__text">Present small-ticket financing examples with a sample weekly or fortnightly repayment schedule and affordability guidance.</p>
+                        <div class="service-card__footer">
+                            <a class="link-arrow" href="microfinance.html">
+                                Review microfinance content
+                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-arrow-right"></use></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="card__topline">
+                            <span class="icon-tile">
+                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-briefcase"></use></svg>
+                            </span>
+                            <span class="badge badge--info">SME lending</span>
+                        </div>
+                        <h3 class="service-card__title">SME loan advisory and comparisons</h3>
+                        <p class="service-card__text">Compare sample structures by amount, term, rate and repayment frequency, with a document checklist to prepare.</p>
+                        <div class="service-card__footer">
+                            <a class="link-arrow" href="sme-loans.html">
+                                Compare sample products
+                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-arrow-right"></use></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="card__topline">
+                            <span class="icon-tile icon-tile--accent">
+                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-partners"></use></svg>
+                            </span>
+                            <span class="badge badge--info">Marketplace</span>
+                        </div>
+                        <h3 class="service-card__title">A hypothetical peer-to-peer marketplace</h3>
+                        <p class="service-card__text">Explore how funding progress, diversification and default risk could be explained clearly — with fictional opportunities only.</p>
+                        <div class="service-card__footer">
+                            <a class="link-arrow" href="p2p-lending.html">
+                                Read the marketplace concept
+                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-arrow-right"></use></svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="demo-note">
+                    <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-info"></use></svg>
+                    <span>The fifth service, financial literacy, is a learning resource. Visit <a href="services.html">all services</a> for the complete list and what each one includes.</span>
+                </p>
+            </div>
+        </section>
+
+        <section class="section section--surface" aria-labelledby="payments-title">
+            <div class="container split">
+                <div>
+                    <span class="eyebrow">Digital payments</span>
+                    <h2 id="payments-title">Collections that are easy to read the next morning</h2>
+                    <p class="lead">A merchant should not need an accounting background to know what was paid, what is pending and what is expected to settle.</p>
+                    <ul class="benefit-list">
+                        <li>
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg>
+                            <span>QR acceptance and payment-link examples with text status labels</span>
+                        </li>
+                        <li>
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg>
+                            <span>Sample settlement timeline showing gross amount, fee and expected date</span>
+                        </li>
+                        <li>
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg>
+                            <span>Reconciliation view that highlights unmatched sample items</span>
+                        </li>
+                    </ul>
+                    <p><a class="btn btn--secondary btn--sm" href="digital-payments.html">Explore digital payments</a></p>
+                </div>
+                <figure class="hero__figure">
+                    <img src="../../../public/assets/images/photos/mobile-payments.jpg"
+                         alt="Stock photograph of a customer paying at a shop counter with a member of staff confirming the payment."
+                         width="960" height="640" loading="lazy" decoding="async">
+                </figure>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="microfinance-title">
+            <div class="container split">
+                <figure class="hero__figure">
+                    <img src="../../../public/assets/images/photos/market-stall.jpg"
+                         alt="Stock photograph of a market stall trader serving a customer at a busy counter."
+                         width="960" height="640" loading="lazy" decoding="async">
+                </figure>
+                <div>
+                    <span class="eyebrow">Microfinance</span>
+                    <h2 id="microfinance-title">Small amounts, clear schedules, honest costs</h2>
+                    <p class="lead">Micro-enterprises often borrow in small amounts with frequent repayments. The demo shows how that could be explained without hiding the arithmetic.</p>
+                    <ul class="benefit-list">
+                        <li>
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg>
+                            <span>Illustrative schedules for weekly, fortnightly or monthly instalments</span>
+                        </li>
+                        <li>
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg>
+                            <span>Plain-language notes on total cost, not just the instalment size</span>
+                        </li>
+                        <li>
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg>
+                            <span>Responsible borrowing guidance for first-time borrowers</span>
+                        </li>
+                    </ul>
+                    <p><a class="btn btn--secondary btn--sm" href="microfinance.html">Review microfinance content</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--surface" aria-labelledby="sme-title">
+            <div class="container split">
+                <div>
+                    <span class="eyebrow">SME lending</span>
+                    <h2 id="sme-title">Compare structures before committing to a conversation</h2>
+                    <p class="lead">Small business owners deserve to see amount, term, rate and repayment frequency side by side, in language they already use.</p>
+                    <p>Sample product cards make the trade-offs visible: a longer term lowers the instalment but increases total interest; a shorter term does the reverse. The demo calculator lets you test both.</p>
+                    <p><a class="btn btn--secondary btn--sm" href="sme-loans.html">Compare sample loan products</a></p>
+                </div>
+                <figure class="hero__figure">
+                    <img src="../../../public/assets/images/photos/sme-workshop.jpg"
+                         alt="Stock photograph of a craftsperson working at a bench in a small workshop."
+                         width="960" height="640" loading="lazy" decoding="async">
+                </figure>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="p2p-title">
+            <div class="container">
+                <div class="split">
+                    <div>
+                        <span class="eyebrow">Marketplace concept</span>
+                        <h2 id="p2p-title">Peer-to-peer lending, presented with the risks first</h2>
+                        <p class="lead">A marketplace where individuals could fund small businesses is a hypothetical feature here. The demo deliberately leads with loss-of-capital disclosure rather than headline returns.</p>
+                        <div class="info-panel info-panel--warning">
+                            <h3>Risk reminder</h3>
+                            <p>None of the opportunities, funding progress figures or borrower profiles on this site are real. Capital can be lost in any lending arrangement, and no return is guaranteed.</p>
+                        </div>
+                        <p><a class="btn btn--secondary btn--sm" href="p2p-lending.html">Read the marketplace concept</a></p>
+                    </div>
+                    <figure class="hero__figure">
+                        <img src="../../../public/assets/images/photos/p2p-funding-pool.jpg"
+                             alt="Stock photograph of two people shaking hands across a table, representing a funding agreement."
+                             width="960" height="640" loading="lazy" decoding="async">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--surface" aria-labelledby="how-title">
+            <div class="container">
+                <div data-component="section-heading"
+                     data-id="how-title"
+                     data-eyebrow="How FinPulse works"
+                     data-title="A four-step path from question to plan"
+                     data-lead="This is how the demonstration is structured. A real provider would have its own process, checks and regulatory requirements."
+                     data-align="center"></div>
+                <div data-component="how-it-works"></div>
+                <p class="text-center"><a class="btn btn--ghost" href="how-it-works.html">See the full journeys for each audience</a></p>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="categories-title">
+            <div class="container">
+                <div data-component="section-heading"
+                     data-id="categories-title"
+                     data-eyebrow="Business categories"
+                     data-title="Designed around real small-business patterns"
+                     data-lead="Retailers, online sellers, freelancers, distributors and growing SMEs face different cash-flow rhythms. The demo describes each separately."></div>
+                <div class="grid grid--3">
+                    <article class="card card--linked">
+                        <span class="icon-tile icon-tile--green">
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-store"></use></svg>
+                        </span>
+                        <h3>Retail shops</h3>
+                        <p>Counter-heavy shops that need a fast daily read of collections.</p>
+                        <div class="card__footer">
+                            <a class="link-arrow" href="business-solutions.html">
+                                Retail solutions
+                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-arrow-right"></use></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="card card--linked">
+                        <span class="icon-tile icon-tile--accent">
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-laptop"></use></svg>
+                        </span>
+                        <h3>Online merchants</h3>
+                        <p>Social-commerce sellers matching orders to payments.</p>
+                        <div class="card__footer">
+                            <a class="link-arrow" href="business-solutions.html">
+                                Online solutions
+                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-arrow-right"></use></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="card card--linked">
+                        <span class="icon-tile">
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-truck"></use></svg>
+                        </span>
+                        <h3>Distributors</h3>
+                        <p>Businesses managing short credit cycles between suppliers and retailers.</p>
+                        <div class="card__footer">
+                            <a class="link-arrow" href="business-solutions.html">
+                                Distributor solutions
+                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-arrow-right"></use></svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <p class="text-center"><a class="btn btn--ghost btn--sm" href="business-solutions.html">Browse all supported categories</a></p>
+            </div>
+        </section>
+
+        <section class="section section--muted" aria-labelledby="calc-preview-title">
+            <div class="container split split--wide-start">
+                <div>
+                    <span class="eyebrow">Loan calculator</span>
+                    <h2 id="calc-preview-title">Estimate an instalment in under a minute</h2>
+                    <p class="lead">Enter an amount, an annual rate and a term. The calculator uses a standard amortisation formula and shows the estimated instalment, total repayment and interest.</p>
+                    <ul class="benefit-list">
+                        <li>
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg>
+                            <span>Zero-interest loans handled separately, with no divide-by-zero trap</span>
+                        </li>
+                        <li>
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg>
+                            <span>Weekly, fortnightly and monthly frequencies supported</span>
+                        </li>
+                        <li>
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg>
+                            <span>Amounts formatted in Bangladeshi lakh and crore grouping</span>
+                        </li>
+                    </ul>
+                    <p><a class="btn btn--primary" href="loan-calculator.html">Open the loan calculator</a></p>
+                </div>
+                <div class="calc-results" aria-hidden="true">
+                    <h3>Illustrative example</h3>
+                    <dl>
+                        <div class="result-row">
+                            <dt>Loan amount</dt>
+                            <dd>BDT 1,50,000</dd>
+                        </div>
+                        <div class="result-row">
+                            <dt>Annual rate</dt>
+                            <dd>14%</dd>
+                        </div>
+                        <div class="result-row">
+                            <dt>Term</dt>
+                            <dd>24 months</dd>
+                        </div>
+                        <div class="result-row result-row--total">
+                            <dt>Estimated monthly instalment</dt>
+                            <dd>BDT 7,202</dd>
+                        </div>
+                    </dl>
+                    <p class="small muted">Static example included in the page markup. Open the calculator to change the numbers yourself.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="dashboard-preview-title">
+            <div class="container">
+                <div class="split split--wide-start split--center">
+                    <div>
+                        <span class="eyebrow">Financial dashboard</span>
+                        <h2 id="dashboard-preview-title">One place to see the month</h2>
+                        <p class="lead">The dashboard demo brings collections, outgoing payments, a loan balance and upcoming repayments into a single static view — with a filterable transaction list and a CSS cash-flow chart.</p>
+                        <p><a class="btn btn--primary" href="dashboard-demo.html">Open the dashboard demo</a></p>
+                    </div>
+                    <div class="dash-preview">
+                        <div class="dash-preview__head">
+                            <h3 class="dash-preview__title">Sample business overview</h3>
+                            <span class="badge badge--demo">Demo data</span>
+                        </div>
+                        <div data-component="dashboard-summary"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--dark" aria-labelledby="security-title">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Security and responsible finance</span>
+                    <h2 id="security-title">Principles behind the demonstration</h2>
+                    <p class="lead">A financial interface has to earn trust. These are the rules the demo applies to itself, and the limits it states openly.</p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature">
+                        <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-shield-check"></use></svg>
+                        <div>
+                            <h3>No credentials, ever</h3>
+                            <p>The demo never asks for a bank password, PIN, OTP, card security code or wallet login.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-ban"></use></svg>
+                        <div>
+                            <h3>No real transactions</h3>
+                            <p>No payment gateway, account or disbursement connection exists. Every status is text in a static page.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-eye"></use></svg>
+                        <div>
+                            <h3>Limits stated plainly</h3>
+                            <p>Client-side validation is labelled as a convenience, not as secure server-side verification.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-scale"></use></svg>
+                        <div>
+                            <h3>Affordability before ambition</h3>
+                            <p>Repayment examples include total cost and warn against borrowing more than cash flow can support.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-document"></use></svg>
+                        <div>
+                            <h3>Illustrative, not advice</h3>
+                            <p>Educational content is general information and does not replace advice from a qualified professional.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-globe"></use></svg>
+                        <div>
+                            <h3>Built for low-bandwidth devices</h3>
+                            <p>Local SVG assets, system fonts and simple layouts keep the demo usable on modest phones.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="demo-note"><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-info"></use></svg><span>Read the full <a href="privacy-policy.html">privacy policy</a> and <a href="terms-of-service.html">terms of service</a> drafts for the demonstration's stated limits.</span></p>
+            </div>
+        </section>
+
+        <section class="section section--surface" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div data-component="section-heading"
+                     data-id="testimonials-title"
+                     data-eyebrow="Sample testimonials"
+                     data-title="Fictional voices, clearly labelled"
+                     data-lead="These quotes were written for the demo to show layout and tone. They are not real customers and must not be reused as endorsements."></div>
+
+                <div class="carousel" data-carousel aria-roledescription="carousel" aria-label="Fictional sample testimonials">
+                    <div class="carousel__viewport" data-carousel-viewport tabindex="0">
+                        <div class="carousel__track">
+                            <figure class="testimonial-card">
+                                <blockquote class="testimonial-card__quote">
+                                    <p>The demo collection summary made it obvious which payments had cleared and which were still pending. I could finally see a whole day in one screen instead of three notebooks.</p>
+                                </blockquote>
+                                <figcaption class="testimonial-card__person">
+                                    <img class="testimonial-card__avatar" src="../../../public/assets/images/testimonials/avatar-1.svg" alt="" width="44" height="44" loading="lazy" decoding="async">
+                                    <span>
+                                        <span class="testimonial-card__name">Sample Merchant A</span>
+                                        <span class="testimonial-card__role">Neighbourhood grocery retailer (fictional)</span>
+                                    </span>
+                                </figcaption>
+                            </figure>
+
+                            <figure class="testimonial-card">
+                                <blockquote class="testimonial-card__quote">
+                                    <p>Reading a sample repayment schedule before choosing a term changed how I thought about weekly instalments. It was easier to plan around my slow season.</p>
+                                </blockquote>
+                                <figcaption class="testimonial-card__person">
+                                    <img class="testimonial-card__avatar" src="../../../public/assets/images/testimonials/avatar-2.svg" alt="" width="44" height="44" loading="lazy" decoding="async">
+                                    <span>
+                                        <span class="testimonial-card__name">Sample Borrower B</span>
+                                        <span class="testimonial-card__role">Small tailoring workshop (fictional)</span>
+                                    </span>
+                                </figcaption>
+                            </figure>
+
+                            <figure class="testimonial-card">
+                                <blockquote class="testimonial-card__quote">
+                                    <p>The demo loan comparison put amount, term and frequency next to each other. I used it to prepare questions before talking to an adviser.</p>
+                                </blockquote>
+                                <figcaption class="testimonial-card__person">
+                                    <img class="testimonial-card__avatar" src="../../../public/assets/images/testimonials/avatar-3.svg" alt="" width="44" height="44" loading="lazy" decoding="async">
+                                    <span>
+                                        <span class="testimonial-card__name">Sample Business Owner C</span>
+                                        <span class="testimonial-card__role">Packaging supplier (fictional)</span>
+                                    </span>
+                                </figcaption>
+                            </figure>
+
+                            <figure class="testimonial-card">
+                                <blockquote class="testimonial-card__quote">
+                                    <p>As a freelancer, the clearest part was the invoice status list. Seeing pending and paid in plain words removed a lot of guesswork.</p>
+                                </blockquote>
+                                <figcaption class="testimonial-card__person">
+                                    <img class="testimonial-card__avatar" src="../../../public/assets/images/testimonials/avatar-4.svg" alt="" width="44" height="44" loading="lazy" decoding="async">
+                                    <span>
+                                        <span class="testimonial-card__name">Sample Freelancer D</span>
+                                        <span class="testimonial-card__role">Freelance designer (fictional)</span>
+                                    </span>
+                                </figcaption>
+                            </figure>
+
+                            <figure class="testimonial-card">
+                                <blockquote class="testimonial-card__quote">
+                                    <p>The financial literacy examples were plain enough to share with my staff. We talked through interest and repayment timing without jargon.</p>
+                                </blockquote>
+                                <figcaption class="testimonial-card__person">
+                                    <img class="testimonial-card__avatar" src="../../../public/assets/images/testimonials/avatar-1.svg" alt="" width="44" height="44" loading="lazy" decoding="async">
+                                    <span>
+                                        <span class="testimonial-card__name">Sample Owner E</span>
+                                        <span class="testimonial-card__role">Small distributor (fictional)</span>
+                                    </span>
+                                </figcaption>
+                            </figure>
+
+                            <figure class="testimonial-card">
+                                <blockquote class="testimonial-card__quote">
+                                    <p>I liked that the marketplace concept states clearly that capital can be lost. The disclaimer was not hidden in small print at the bottom.</p>
+                                </blockquote>
+                                <figcaption class="testimonial-card__person">
+                                    <img class="testimonial-card__avatar" src="../../../public/assets/images/testimonials/avatar-3.svg" alt="" width="44" height="44" loading="lazy" decoding="async">
+                                    <span>
+                                        <span class="testimonial-card__name">Sample Lender F</span>
+                                        <span class="testimonial-card__role">Hypothetical marketplace lender (fictional)</span>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    
+<div class="carousel__controls">
+    <p class="carousel__status" data-carousel-status aria-live="polite"></p>
+    <ul class="carousel__dots" data-carousel-dots aria-label="Choose sample testimonial group"></ul>
+    <div class="carousel__buttons">
+        <button class="carousel__button" type="button" data-carousel-prev aria-label="Show previous sample testimonials">
+            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-arrow-left"></use></svg>
+        </button>
+        <button class="carousel__button" type="button" data-carousel-next aria-label="Show next sample testimonials">
+            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-arrow-right"></use></svg>
+        </button>
+    </div>
+</div>
+                                        </div>
+
+                                        <p class="text-center"><a class="btn btn--ghost btn--sm" href="testimonials.html">Read all sample testimonials</a></p>
+                                    </div>
+                                </section>
+
+                                <section class="section" aria-labelledby="faq-preview-title">
+                                    <div class="container container--narrow">
+                                        <div class="section-head section-head--center">
+                                            <span class="eyebrow">Questions</span>
+                                            <h2 id="faq-preview-title">Common questions about this demo</h2>
+                                            <p class="lead">Short answers to the things people ask first. The full FAQ covers payments, calculations, privacy and marketplace risk.</p>
+                                        </div>
+
+                                        <div class="accordion" data-accordion>
+                                            <div class="accordion__item">
+                                                <h3 class="accordion__heading">
+                                                    <button class="accordion__trigger" type="button" aria-expanded="false">
+                                                        <span>Is any of this real?</span>
+                                                        <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                                                    </button>
+                                            </h3>
+                                        <div class="accordion__panel">
+                                                    <p>No. FinPulse is a fictional brand created for a front-end design demonstration. The platform, products, balances and testimonials are invented, and no financial service is offered or implied.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion__item">
+                                                <h3 class="accordion__heading">
+                                                    <button class="accordion__trigger" type="button" aria-expanded="false">
+                                                        <span>Can I make a payment or apply for a loan here?</span>
+                                                        <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                                                    </button>
+                                                </h3>
+                                                <div class="accordion__panel">
+                                                    <p>No. There is no payment gateway, application endpoint or account system. Forms validate entries in your browser and then show a demonstration confirmation only.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion__item">
+                                                <h3 class="accordion__heading">
+                                                    <button class="accordion__trigger" type="button" aria-expanded="false">
+                                                        <span>Why does the calculator ask for an annual rate?</span>
+                                                        <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                                                    </button>
+                                                </h3>
+                                                <div class="accordion__panel">
+                                                    <p>Quoted borrowing costs are usually annual, while repayments happen monthly, fortnightly or weekly. The calculator converts the annual rate into a periodic rate so the instalment matches the payment schedule you choose.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion__item">
+                                                <h3 class="accordion__heading">
+                                                    <button class="accordion__trigger" type="button" aria-expanded="false">
+                                                        <span>Do I need JavaScript to view the site?</span>
+                                                        <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                                                    </button>
+                                                </h3>
+                                                <div class="accordion__panel">
+                                                    <p>The main content is in HTML, but the shared header and footer are loaded with JavaScript. Serve the project over HTTP as described in the README so those requests are allowed.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <p class="text-center"><a class="btn btn--ghost btn--sm" href="faq.html">Read the full FAQ</a></p>
+                                    </div>
+                                </section>
+
+                                <div data-component="cta-section"
+                                     data-title="Explore the FinPulse demonstration"
+                                     data-text="Work through the calculator, the dashboard and the sample financing pages, or send a demo enquiry to see the accessible form states."
+                                     data-primary-label="Contact the demo team"
+                                     data-primary-href="contact.html"
+                                     data-secondary-label="Open the loan calculator"
+                                     data-secondary-href="loan-calculator.html"></div>
+                            </main>
+
+                            <div data-component="footer"></div>
+
+                            <script type="module" src="../../../public/js/main.js"></script>
+                        </body>
+                        </html>

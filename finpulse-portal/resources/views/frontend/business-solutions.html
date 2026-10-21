@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Business Solutions by Category | FinPulse Demo</title>
+    <meta name="description" content="Solutions for retailers, small shops, online merchants, freelancers, service providers, distributors and growing SMEs â€” with illustrative workflows and benefits.">
+    <link rel="canonical" href="https://finpulse.example/resources/views/frontend/business-solutions.html">
+    <meta name="theme-color" content="#123b4a">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FinPulse (fictional demo)">
+    <meta property="og:title" content="Business Solutions by Category | FinPulse Demo">
+    <meta property="og:description" content="Illustrative financial workflows and benefits for seven small-business categories.">
+    <meta property="og:url" content="https://finpulse.example/resources/views/frontend/business-solutions.html">
+    <meta property="og:image" content="https://finpulse.example/public/assets/images/photos/business-retail.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="components-base" content="../../../resources/views/components/">
+    <link rel="icon" href="../../../public/assets/images/branding/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../../public/css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div data-component="header" data-active="solutions"></div>
+    <div data-component="breadcrumbs" data-trail="Home:home.html|Business solutions"></div>
+
+    <main id="main" tabindex="-1">
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <span class="eyebrow">Business solutions</span>
+                <h1 id="page-title">Built around how each business actually trades</h1>
+                <p class="lead">A pharmacy, a freelancer and a distributor share a need for clear records but not the same cash-flow rhythm. Filter the categories below to see the relevant workflow.</p>
+                <p><span class="badge badge--demo">Illustrative scenarios only</span></p>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="categories-title">
+            <div class="container" data-filters>
+                <div data-component="section-heading"
+                     data-id="categories-title"
+                     data-eyebrow="Supported categories"
+                     data-title="Six business patterns"
+                     data-lead="Each card shows the typical problem, an illustrative workflow and the benefits the demonstration focuses on."></div>
+
+                <div class="filter-bar">
+                    <div class="chip-group" role="group" aria-label="Filter business categories">
+                        <button class="chip" type="button" data-filter="all" aria-pressed="true">All businesses</button>
+                        <button class="chip" type="button" data-filter="retail" aria-pressed="false">Retail</button>
+                        <button class="chip" type="button" data-filter="online" aria-pressed="false">Online</button>
+                        <button class="chip" type="button" data-filter="services" aria-pressed="false">Services</button>
+                        <button class="chip" type="button" data-filter="trade" aria-pressed="false">Trade</button>
+                        <button class="chip" type="button" data-filter="growing" aria-pressed="false">Growing SMEs</button>
+                    </div>
+                    <div class="filter-search">
+                        <div class="field">
+                            <label class="field__label" for="category-search">Search categories</label>
+                            <input class="input" type="search" id="category-search" data-filter-search
+                                   placeholder="For example: distributor or freelancer" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+
+                <p class="filter-count" data-filter-count aria-live="polite"></p>
+
+                <div class="grid grid--2" data-filter-list>
+                    <article class="business-card" data-filter-item data-categories="retail">
+                        <img class="business-card__image" src="../../../public/assets/images/photos/business-retail.jpg" alt="" width="720" height="440" loading="lazy" decoding="async">
+                        <div class="business-card__body">
+                            <h3 class="business-card__title">Neighbourhood retailers</h3>
+                            <p class="business-card__text">Small grocery, pharmacy and hardware shops that take most payments at the counter.</p>
+                            <p class="business-card__problem"><strong>Typical challenge:</strong> Counter payments are often recorded informally, so daily reconciliation is slow and lending conversations lack evidence.</p>
+                            <h4 class="small">Illustrative workflow</h4>
+                            <ol class="business-card__workflow">
+                                <li>Accept a simulated QR payment at the counter</li>
+                                <li>Review the illustrative daily collection list</li>
+                                <li>Match collections against a sample cash record</li>
+                            </ol>
+                            <ul class="benefit-list">
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg><span>Clearer daily visibility</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg><span>Fewer manual notes</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg><span>A demonstrative payment history for advisory talks</span></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="business-card" data-filter-item data-categories="online retail">
+                        <img class="business-card__image" src="../../../public/assets/images/photos/business-online.jpg" alt="" width="720" height="440" loading="lazy" decoding="async">
+                        <div class="business-card__body">
+                            <h3 class="business-card__title">Online merchants</h3>
+                            <p class="business-card__text">Social-commerce sellers and small online stores selling through pages and messaging apps.</p>
+                            <p class="business-card__problem"><strong>Typical challenge:</strong> Orders, payments and deliveries are tracked in separate places, making it hard to see what was actually paid.</p>
+                            <h4 class="small">Illustrative workflow</h4>
+                            <ol class="business-card__workflow">
+                                <li>Send a demo payment link for an order</li>
+                                <li>Mark the order as awaiting confirmation</li>
+                                <li>Reconcile illustrative orders with simulated collections</li>
+                            </ol>
+                            <ul class="benefit-list">
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg><span>Fewer order-to-payment mismatches</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg><span>Clear status labels</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg><span>Illustrative settlement overview</span></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="business-card" data-filter-item data-categories="services">
+                        <img class="business-card__image" src="../../../public/assets/images/photos/business-freelancer.jpg" alt="" width="720" height="440" loading="lazy" decoding="async">
+                        <div class="business-card__body">
+                            <h3 class="business-card__title">Freelancers</h3>
+                            <p class="business-card__text">Designers, developers, translators and creative professionals who invoice clients directly.</p>
+                            <p class="business-card__problem"><strong>Typical challenge:</strong> Irregular income makes it hard to plan repayments and separate business cash from personal spending.</p>
+                            <h4 class="small">Illustrative workflow</h4>
+                            <ol class="business-card__workflow">
+                                <li>Issue a sample invoice with a payment link</li>
+                                <li>Track illustrative invoice status</li>
+                                <li>Use a demo cash-flow view to plan saving set-asides</li>
+                            </ol>
+                            <ul class="benefit-list">
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg><span>Payment history in one place</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg><span>Clearer invoice statuses</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg><span>Repayment planning support</span></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="business-card" data-filter-item data-categories="trade">
+                        <img class="business-card__image" src="../../../public/assets/images/photos/business-distributor.jpg" alt="" width="720" height="440" loading="lazy" decoding="async">
+                        <div class="business-card__body">
+                            <h3 class="business-card__title">Small distributors</h3>
+                            <p class="business-card__text">Local distributors moving goods between wholesalers and retailers on short credit cycles.</p>
+                            <p class="business-card__problem"><strong>Typical challenge:</strong> Stock purchases and collections happen on different cycles, creating temporary working-capital gaps.</p>
+                            <h4 class="small">Illustrative workflow</h4>
+                            <ol class="business-card__workflow">
+                                <li>Record illustrative supplier orders</li>
+                                <li>Track simulated collections from retailers</li>
+                                <li>Review a sample short-term working-capital plan</li>
+                            </ol>
+                            <ul class="benefit-list">
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg><span>Clearer cash-cycle view</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg><span>Structured supplier payments</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg><span>Better preparation for advisory talks</span></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="business-card" data-filter-item data-categories="services">
+                        <img class="business-card__image" src="../../../public/assets/images/photos/business-service.jpg" alt="" width="720" height="440" loading="lazy" decoding="async">
+                        <div class="business-card__body">
+                            <h3 class="business-card__title">Service providers</h3>
+                            <p class="business-card__text">Salons, repair shops, tutors and clinics that combine bookings with regular payments.</p>
+                            <p class="business-card__problem"><strong>Typical challenge:</strong> Bookings, no-shows and payments are managed separately, which complicates a simple daily summary.</p>
+                            <h4 class="small">Illustrative workflow</h4>
+                            <ol class="business-card__workflow">
+                                <li>Take a demo booking with a deposit example</li>
+                                <li>Collect the balance through a simulated link</li>
+                                <li>Review an illustrative daily summary</li>
+                            </ol>
+                            <ul class="benefit-list">
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg><span>Simpler daily summary</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg><span>Clearer deposit records</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg><span>Fewer manual notes</span></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="business-card" data-filter-item data-categories="growing trade retail">
+                        <img class="business-card__image" src="../../../public/assets/images/photos/business-growing.jpg" alt="" width="720" height="440" loading="lazy" decoding="async">
+                        <div class="business-card__body">
+                            <h3 class="business-card__title">Growing SMEs</h3>
+                            <p class="business-card__text">Established small businesses preparing to add staff, space or equipment.</p>
+                            <p class="business-card__problem"><strong>Typical challenge:</strong> Expansion plans need structured figures, but internal records are often incomplete for advisory conversations.</p>
+                            <h4 class="small">Illustrative workflow</h4>
+                            <ol class="business-card__workflow">
+                                <li>Assemble illustrative statements</li>
+                                <li>Compare sample financing structures</li>
+                                <li>Model repayments with the demo calculator</li>
+                            </ol>
+                            <ul class="benefit-list">
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg><span>Structured preparation checklist</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg><span>Sample comparison of loan structures</span></li>
+                                <li><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg><span>Repayment modelling</span></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                
+<p class="empty-state" data-filter-empty hidden>No categories match that search. Try a different word or choose â€œAll businessesâ€.</p>
+                            </div>
+                        </section>
+
+                        <section class="section section--surface" aria-labelledby="matrix-title">
+                            <div class="container">
+                                <div data-component="section-heading"
+                                     data-id="matrix-title"
+                                     data-eyebrow="Solution map"
+                                     data-title="Which service fits which business"
+                                     data-lead="A quick reference. Every entry points to a page that explains the concept in detail."></div>
+
+                                <div class="table-wrap">
+                                    <table class="data-table">
+                                        <caption>Illustrative solution map for small business categories</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Business type</th>
+                                                <th scope="col">Payments</th>
+                                                <th scope="col">Financing</th>
+                                                <th scope="col">Learning</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Retailer / small shop</th>
+                                                <td><a href="digital-payments.html">QR and settlement</a></td>
+                                                <td><a href="microfinance.html">Short-term stock</a></td>
+                                                <td><a href="financial-literacy.html">Cash-flow basics</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Online merchant</th>
+                                                <td><a href="digital-payments.html">Payment links</a></td>
+                                                <td><a href="sme-loans.html">Inventory support</a></td>
+                                                <td><a href="financial-literacy.html">Record keeping</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Freelancer</th>
+                                                <td><a href="digital-payments.html">Invoice collection</a></td>
+                                                <td><a href="sme-loans.html">Invoice bridge concept</a></td>
+                                                <td><a href="financial-literacy.html">Irregular income</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Service provider</th>
+                                                <td><a href="digital-payments.html">Deposits and balances</a></td>
+                                                <td><a href="microfinance.html">Small equipment</a></td>
+                                                <td><a href="financial-literacy.html">Repayment discipline</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Distributor</th>
+                                                <td><a href="digital-payments.html">Supplier payouts</a></td>
+                                                <td><a href="sme-loans.html">Trade and inventory</a></td>
+                                                <td><a href="financial-literacy.html">Working-capital cycles</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Growing SME</th>
+                                                <td><a href="digital-payments.html">Multi-channel collections</a></td>
+                                                <td><a href="sme-loans.html">Expansion concept</a></td>
+                                                <td><a href="financial-literacy.html">Interest and total cost</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section" aria-labelledby="benefits-title">
+                            <div class="container">
+                                <div class="split">
+                                    <div>
+                                        <span class="eyebrow">Shared benefits</span>
+                                        <h2 id="benefits-title">What clearer financial records unlock</h2>
+                                        <p class="lead">The same three benefits appear across every category: better visibility, better conversations and better preparation.</p>
+                                        <ul class="checklist">
+                                            <li>
+                                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-eye"></use></svg>
+                                                <span>
+                                                    <span class="checklist__label">Visibility</span>
+                                                    <span class="checklist__note">Knowing what has actually arrived, not what is expected to arrive.</span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-users"></use></svg>
+                                                <span>
+                                                    <span class="checklist__label">Conversations</span>
+                                                    <span class="checklist__note">Bringing a clear record to an adviser instead of reconstructing it from memory.</span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-calendar"></use></svg>
+                                                <span>
+                                                    <span class="checklist__label">Preparation</span>
+                                                    <span class="checklist__note">Knowing which documents a provider is likely to request, before being asked.</span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <figure class="figure-block">
+                                        <img src="../../../public/assets/images/photos/planning-session.jpg"
+                                             alt="Stock photograph of two people reviewing plans together at a laptop."
+                                             width="960" height="640" loading="lazy" decoding="async">
+                                        <figcaption>Stock photograph, used for illustration only. Any chart or checklist on this page is a demonstration.</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div data-component="cta-section"
+                             data-title="See these workflows in a dashboard"
+                             data-text="The dashboard demo applies the same ideas to a single fictional business, with filterable transactions and a sample repayment list."
+                             data-primary-label="Open the dashboard demo"
+                             data-primary-href="dashboard-demo.html"
+                             data-secondary-label="Explore all services"
+                             data-secondary-href="services.html"></div>
+                    </main>
+
+                    <div data-component="footer"></div>
+
+                    <script type="module" src="../../../public/js/main.js"></script>
+                </body>
+                </html>

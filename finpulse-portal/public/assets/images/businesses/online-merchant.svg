@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" role="img" aria-labelledby="onlineTitle">
+    <title id="onlineTitle">Illustration of an online merchant storefront with an order confirmation</title>
+    <rect width="360" height="220" rx="16" fill="#eef4f5"/>
+    <rect x="52" y="40" width="190" height="140" rx="10" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+    <path d="M52 52a10 10 0 0110-10h170a10 10 0 0110 10v14H52z" fill="#123b4a"/>
+    <circle cx="68" cy="54" r="4" fill="#4dd6a4"/>
+    <circle cx="82" cy="54" r="4" fill="#5f8492"/>
+    <rect x="72" y="86" width="72" height="50" rx="6" fill="#e3f1ea"/>
+    <rect x="156" y="86" width="66" height="8" rx="4" fill="#c7d8dd"/>
+    <rect x="156" y="102" width="52" height="8" rx="4" fill="#e2eaec"/>
+    <rect x="156" y="124" width="40" height="18" rx="9" fill="#123b4a"/>
+    <rect x="72" y="150" width="150" height="8" rx="4" fill="#e2eaec"/>
+    <rect x="256" y="96" width="76" height="88" rx="10" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+    <circle cx="294" cy="122" r="13" fill="#e3f1ea"/>
+    <path d="M288 122l4 4 8-9" fill="none" stroke="#0f6b3f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="272" y="146" width="44" height="7" rx="3.5" fill="#c7d8dd"/>
+    <rect x="272" y="160" width="30" height="7" rx="3.5" fill="#e2eaec"/>
+</svg>

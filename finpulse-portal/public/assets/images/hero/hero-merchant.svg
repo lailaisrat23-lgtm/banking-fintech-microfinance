@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380" role="img" aria-labelledby="merchantTitle">
+    <title id="merchantTitle">Illustration of a small shop owner accepting a QR payment on a phone, with a confirmed payment message</title>
+    <rect x="0" y="0" width="560" height="380" rx="20" fill="#eef4f5"/>
+    <rect x="44" y="120" width="240" height="200" rx="14" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+    <path d="M44 148h240v-14a14 14 0 00-14-14H58a14 14 0 00-14 14z" fill="#123b4a"/>
+    <rect x="72" y="168" width="184" height="16" rx="8" fill="#d5e2e6"/>
+    <rect x="72" y="196" width="120" height="10" rx="5" fill="#e2eaec"/>
+    <rect x="72" y="228" width="86" height="60" rx="8" fill="#e3f1ea"/>
+    <rect x="170" y="228" width="86" height="60" rx="8" fill="#e5eef7"/>
+    <rect x="72" y="300" width="184" height="8" rx="4" fill="#e2eaec"/>
+    <rect x="286" y="56" width="132" height="248" rx="20" fill="#123b4a"/>
+    <rect x="296" y="80" width="112" height="196" rx="10" fill="#ffffff"/>
+    <rect x="318" y="68" width="68" height="6" rx="3" fill="#4dd6a4"/>
+    <g fill="#123b4a">
+        <rect x="312" y="96" width="22" height="22" rx="3"/>
+        <rect x="370" y="96" width="22" height="22" rx="3"/>
+        <rect x="312" y="154" width="22" height="22" rx="3"/>
+        <rect x="342" y="96" width="8" height="8"/>
+        <rect x="352" y="112" width="8" height="8"/>
+        <rect x="342" y="128" width="8" height="8"/>
+        <rect x="358" y="144" width="8" height="8"/>
+        <rect x="374" y="160" width="8" height="8"/>
+        <rect x="342" y="168" width="8" height="8"/>
+        <rect x="358" y="184" width="8" height="8"/>
+        <rect x="374" y="200" width="8" height="8"/>
+        <rect x="312" y="200" width="8" height="8"/>
+    </g>
+    <rect x="310" y="228" width="84" height="28" rx="14" fill="#e3f1ea"/>
+    <text x="352" y="247" fill="#055f45" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Paid (demo)</text>
+    <g>
+        <rect x="392" y="286" width="152" height="52" rx="12" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+        <circle cx="416" cy="312" r="12" fill="#e3f1ea"/>
+        <path d="M410 312l4 4 8-9" fill="none" stroke="#0f6b3f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="436" y="309" fill="#17252c" font-family="Arial, Helvetica, sans-serif" font-size="11">Payment received</text>
+        <text x="436" y="325" fill="#47575f" font-family="Arial, Helvetica, sans-serif" font-size="11">BDT 850 · illustrative</text>
+    </g>
+</svg>

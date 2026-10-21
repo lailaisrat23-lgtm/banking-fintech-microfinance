@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="mfTitle">
+    <title id="mfTitle">Illustration of a micro-entrepreneur reviewing an illustrative repayment plan</title>
+    <rect width="480" height="320" rx="18" fill="#eef4f5"/>
+    <rect x="30" y="98" width="214" height="176" rx="14" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+    <path d="M30 126V112a14 14 0 0114-14h186a14 14 0 0114 14v14z" fill="#123b4a"/>
+    <rect x="48" y="142" width="86" height="10" rx="5" fill="#c7d8dd"/>
+    <rect x="48" y="164" width="178" height="8" rx="4" fill="#e2eaec"/>
+    <rect x="48" y="182" width="146" height="8" rx="4" fill="#e2eaec"/>
+    <rect x="48" y="210" width="178" height="46" rx="8" fill="#eef4f5" stroke="#d5dfe3"/>
+    <rect x="60" y="220" width="60" height="8" rx="4" fill="#9fb2b8"/>
+    <rect x="60" y="236" width="96" height="8" rx="4" fill="#c7d8dd"/>
+    <text x="214" y="240" fill="#123b4a" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="bold" text-anchor="end">BDT 4,250</text>
+    <rect x="266" y="60" width="184" height="214" rx="14" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+    <circle cx="302" cy="104" r="18" fill="#e3eef0"/>
+    <path d="M302 96a8 8 0 018 8c0 5-8 12-8 12s-8-7-8-12a8 8 0 018-8z" fill="#123b4a" opacity="0.18"/>
+    <circle cx="302" cy="104" r="5" fill="#123b4a"/>
+    <rect x="332" y="92" width="96" height="9" rx="4.5" fill="#c7d8dd"/>
+    <rect x="332" y="110" width="66" height="8" rx="4" fill="#e2eaec"/>
+    <rect x="284" y="140" width="148" height="10" rx="5" fill="#e3f1ea"/>
+    <rect x="284" y="140" width="92" height="10" rx="5" fill="#087f5b"/>
+    <text x="284" y="172" fill="#47575f" font-family="Arial, Helvetica, sans-serif" font-size="11">Repayment plan (illustrative)</text>
+    <g fill="#eef4f5" stroke="#d5dfe3">
+        <rect x="284" y="186" width="44" height="34" rx="7"/>
+        <rect x="336" y="186" width="44" height="34" rx="7"/>
+        <rect x="388" y="186" width="44" height="34" rx="7"/>
+    </g>
+    <g fill="#9fb2b8" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle">
+        <text x="306" y="207">W1</text>
+        <text x="358" y="207">W2</text>
+        <text x="410" y="207">W3</text>
+    </g>
+    <rect x="284" y="236" width="148" height="22" rx="11" fill="#e3f1ea"/>
+    <text x="358" y="251" fill="#055f45" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Sample schedule</text>
+    <rect x="30" y="286" width="420" height="8" rx="4" fill="#d5e2e6"/>
+</svg>

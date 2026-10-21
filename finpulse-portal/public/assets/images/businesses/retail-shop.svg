@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" role="img" aria-labelledby="retailTitle">
+    <title id="retailTitle">Illustration of a neighbourhood retail shop with a counter and a payment terminal</title>
+    <rect width="360" height="220" rx="16" fill="#eef4f5"/>
+    <path d="M46 78l12-30h244l12 30z" fill="#123b4a"/>
+    <path d="M46 78h268v104H46z" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+    <rect x="66" y="98" width="84" height="46" rx="6" fill="#e3f1ea"/>
+    <rect x="66" y="156" width="84" height="8" rx="4" fill="#e2eaec"/>
+    <rect x="166" y="98" width="60" height="66" rx="6" fill="#e5eef7"/>
+    <rect x="242" y="98" width="52" height="40" rx="6" fill="#eef4f5" stroke="#d5dfe3"/>
+    <circle cx="268" cy="162" r="14" fill="#e3f1ea"/>
+    <path d="M262 162l4 4 8-9" fill="none" stroke="#0f6b3f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="46" y="182" width="268" height="8" rx="4" fill="#d5e2e6"/>
+</svg>

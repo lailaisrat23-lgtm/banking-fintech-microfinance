@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Financial Dashboard Demo â€” Sample Business Overview | FinPulse</title>
+    <meta name="description" content="A static demonstration dashboard with an illustrative balance, incoming and outgoing payment summaries, loan balance, repayment schedule, transaction filter and cash-flow chart.">
+    <link rel="canonical" href="https://finpulse.example/resources/views/frontend/dashboard-demo.html">
+    <meta name="theme-color" content="#123b4a">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FinPulse (fictional demo)">
+    <meta property="og:title" content="Financial Dashboard Demo â€” Sample Business Overview | FinPulse">
+    <meta property="og:description" content="A fictional dashboard demonstration with filterable sample transactions and a CSS cash-flow chart.">
+    <meta property="og:url" content="https://finpulse.example/resources/views/frontend/dashboard-demo.html">
+    <meta property="og:image" content="https://finpulse.example/public/assets/images/photos/planning-session.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="components-base" content="../../../resources/views/components/">
+    <link rel="icon" href="../../../public/assets/images/branding/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../../public/css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div data-component="header" data-active="dashboard"></div>
+    <div data-component="breadcrumbs" data-trail="Home:home.html|Dashboard demo"></div>
+
+    <main id="main" tabindex="-1">
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <span class="eyebrow">Dashboard demo</span>
+                <h1 id="page-title">A sample business, one screen</h1>
+                <p class="lead">Everything on this page is static demonstration data for a fictional business. No account is connected, nothing updates and no personal financial information is displayed or collected.</p>
+                <p><span class="badge badge--demo">All figures are illustrative</span></p>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="dashboard-title">
+            <div class="container">
+                <h2 id="dashboard-title" class="sr-only">Demonstration dashboard</h2>
+
+                <div class="dashboard-shell" data-dashboard>
+                    <div class="dashboard-topbar">
+                        <div>
+                            <h3 class="dashboard-topbar__title">Sample Trading Co. â€” demo workspace</h3>
+                            <p class="dashboard-topbar__note">Fictional business Â· sample data captured for illustration only</p>
+                        </div>
+                        <span class="badge badge--demo">Demo environment</span>
+                    </div>
+
+                    <div data-component="dashboard-summary"></div>
+
+                    <div class="dashboard-grid">
+                        <div class="stack">
+                            <section class="panel" aria-labelledby="cashflow-title">
+                                <div class="panel__head">
+                                    <h3 id="cashflow-title">Sample monthly cash flow</h3>
+                                    <p class="panel__hint">Twelve illustrative months (thousands of BDT)</p>
+                                </div>
+
+                                <div class="chart" role="img"
+                                     aria-label="Bar chart of illustrative monthly cash flow for a fictional business. Incoming values rise from 40 to 92 thousand Taka across twelve months; outgoing values rise from 24 to 58 thousand Taka.">
+                                    <div class="chart__column"><span class="chart__bar chart__bar--h40"></span><span class="chart__bar chart__bar--out chart__bar--h25"></span></div>
+                                    <div class="chart__column"><span class="chart__bar chart__bar--h45"></span><span class="chart__bar chart__bar--out chart__bar--h30"></span></div>
+                                    <div class="chart__column"><span class="chart__bar chart__bar--h50"></span><span class="chart__bar chart__bar--out chart__bar--h30"></span></div>
+                                    <div class="chart__column"><span class="chart__bar chart__bar--h55"></span><span class="chart__bar chart__bar--out chart__bar--h35"></span></div>
+                                    <div class="chart__column"><span class="chart__bar chart__bar--h60"></span><span class="chart__bar chart__bar--out chart__bar--h35"></span></div>
+                                    <div class="chart__column"><span class="chart__bar chart__bar--h65"></span><span class="chart__bar chart__bar--out chart__bar--h40"></span></div>
+                                    <div class="chart__column"><span class="chart__bar chart__bar--h70"></span><span class="chart__bar chart__bar--out chart__bar--h45"></span></div>
+                                    <div class="chart__column"><span class="chart__bar chart__bar--h75"></span><span class="chart__bar chart__bar--out chart__bar--h45"></span></div>
+                                    <div class="chart__column"><span class="chart__bar chart__bar--h80"></span><span class="chart__bar chart__bar--out chart__bar--h50"></span></div>
+                                    <div class="chart__column"><span class="chart__bar chart__bar--h85"></span><span class="chart__bar chart__bar--out chart__bar--h50"></span></div>
+                                    <div class="chart__column"><span class="chart__bar chart__bar--h90"></span><span class="chart__bar chart__bar--out chart__bar--h55"></span></div>
+                                    <div class="chart__column"><span class="chart__bar chart__bar--h95"></span><span class="chart__bar chart__bar--out chart__bar--h60"></span></div>
+                                </div>
+
+                                <ul class="chart__labels" aria-hidden="true">
+                                    <li>Jan</li><li>Feb</li><li>Mar</li><li>Apr</li><li>May</li><li>Jun</li>
+                                    <li>Jul</li><li>Aug</li><li>Sep</li><li>Oct</li><li>Nov</li><li>Dec</li>
+                                </ul>
+
+                                <ul class="chart__legend">
+                                    <li><span class="chart__swatch" aria-hidden="true"></span>Sample incoming</li>
+                                    <li><span class="chart__swatch chart__swatch--out" aria-hidden="true"></span>Sample outgoing</li>
+                                </ul>
+                                <p class="small muted">Chart drawn with CSS. Values are rounded illustrations and do not correspond to any real business.</p>
+                            </section>
+
+                            <section class="panel" aria-labelledby="transactions-title">
+                                <div class="panel__head">
+                                    <h2 id="transactions-title">Sample transactions</h2>
+                                    <p class="panel__hint">Filter the list below. Nothing is submitted.</p>
+                                </div>
+
+                                <div class="chip-group" role="group" aria-label="Filter sample transactions">
+                                    <button class="chip" type="button" data-tx-filter="all" aria-pressed="true">All</button>
+                                    <button class="chip" type="button" data-tx-filter="in" aria-pressed="false">Incoming</button>
+                                    <button class="chip" type="button" data-tx-filter="out" aria-pressed="false">Outgoing</button>
+                                    <button class="chip" type="button" data-tx-filter="pending" aria-pressed="false">Pending</button>
+                                </div>
+
+                                <p class="filter-count" data-tx-count aria-live="polite"></p>
+
+                                <div class="table-wrap">
+                                    <table class="data-table">
+                                        <caption class="sr-only">Sample transactions with type, amount and status</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Date (sample)</th>
+                                                <th scope="col">Description</th>
+                                                <th scope="col">Type</th>
+                                                <th scope="col">Amount</th>
+                                                <th scope="col">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr data-tx-row data-type="in" data-amount="12400">
+                                                <th scope="row">12 Oct</th>
+                                                <td>QR collections â€” counter</td>
+                                                <td>Incoming</td>
+                                                <td class="num">+ BDT 12,400</td>
+                                                <td><span class="status status--completed">Completed</span></td>
+                                            </tr>
+                                            <tr data-tx-row data-type="in" data-amount="8600">
+                                                <th scope="row">12 Oct</th>
+                                                <td>Payment link â€” invoice 1042</td>
+                                                <td>Incoming</td>
+                                                <td class="num">+ BDT 8,600</td>
+                                                <td><span class="status status--completed">Completed</span></td>
+                                            </tr>
+                                            <tr data-tx-row data-type="out" data-amount="3150">
+                                                <th scope="row">11 Oct</th>
+                                                <td>Supplier payout</td>
+                                                <td>Outgoing</td>
+                                                <td class="num">âˆ’ BDT 3,150</td>
+                                                <td><span class="status status--completed">Completed</span></td>
+                                            </tr>
+                                            <tr data-tx-row data-type="out" data-amount="9000">
+                                                <th scope="row">10 Oct</th>
+                                                <td>Shop rent â€” sample</td>
+                                                <td>Outgoing</td>
+                                                <td class="num">âˆ’ BDT 9,000</td>
+                                                <td><span class="status status--completed">Completed</span></td>
+                                            </tr>
+                                            <tr data-tx-row data-type="pending" data-amount="4200">
+                                                <th scope="row">10 Oct</th>
+                                                <td>Customer transfer â€” awaiting confirmation</td>
+                                                <td>Pending</td>
+                                                <td class="num">+ BDT 4,200</td>
+                                                <td><span class="status status--pending">Pending</span></td>
+                                            </tr>
+                                            <tr data-tx-row data-type="in" data-amount="2150">
+                                                <th scope="row">09 Oct</th>
+                                                <td>Card collection</td>
+                                                <td>Incoming</td>
+                                                <td class="num">+ BDT 2,150</td>
+                                                <td><span class="status status--completed">Completed</span></td>
+                                            </tr>
+                                            <tr data-tx-row data-type="out" data-amount="7202">
+                                                <th scope="row">08 Oct</th>
+                                                <td>Loan instalment â€” sample schedule</td>
+                                                <td>Outgoing</td>
+                                                <td class="num">âˆ’ BDT 7,202</td>
+                                                <td><span class="status status--completed">Completed</span></td>
+                                            </tr>
+                                            <tr data-tx-row data-type="pending" data-amount="1800">
+                                                <th scope="row">08 Oct</th>
+                                                <td>Refund requested â€” under review</td>
+                                                <td>Pending</td>
+                                                <td class="num">âˆ’ BDT 1,800</td>
+                                                <td><span class="status status--pending">Pending review</span></td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th scope="row" colspan="3">Total of visible rows</th>
+                                                <td class="num" colspan="2" data-tx-total>â€”</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <p class="empty-state" data-tx-empty hidden>No sample transactions match this filter.</p>
+                            </section>
+                        </div>
+
+                        <div class="stack">
+                            <section class="panel" aria-labelledby="loan-balance-title">
+                                <div class="panel__head">
+                                    <h3 id="loan-balance-title">Sample loan balance</h3>
+                                </div>
+                                <dl>
+                                    <div class="result-row">
+                                        <dt>Original sample amount</dt>
+                                        <dd>BDT 1,50,000</dd>
+                                    </div>
+                                    <div class="result-row">
+                                        <dt>Repaid to date (illustrative)</dt>
+                                        <dd>BDT 50,414</dd>
+                                    </div>
+                                    <div class="result-row result-row--total">
+                                        <dt>Remaining balance</dt>
+                                        <dd>BDT 99,586</dd>
+                                    </div>
+                                </dl>
+                                <div class="progress-row">
+                                    <span>Illustrative progress</span>
+                                    <span>34%</span>
+                                </div>
+                                <span class="progress"><span class="progress__bar progress__bar--33"></span></span>
+                                <p class="demo-note">
+                                    <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-info"></use></svg>
+                                    <span>Sample figures only. No loan exists.</span>
+                                </p>
+                            </section>
+
+                            <section class="panel" aria-labelledby="repayments-title">
+                                <div class="panel__head">
+                                    <h3 id="repayments-title">Upcoming sample repayments</h3>
+                                </div>
+                                <ul class="repayment-list">
+                                    <li>
+                                        <span>
+                                            <span class="repayment-list__when">20 October</span>
+                                            <span class="repayment-list__meta">Monthly instalment Â· sample</span>
+                                        </span>
+                                        <span class="repayment-list__amount">BDT 7,202</span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <span class="repayment-list__when">20 November</span>
+                                            <span class="repayment-list__meta">Monthly instalment Â· sample</span>
+                                        </span>
+                                        <span class="repayment-list__amount">BDT 7,202</span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <span class="repayment-list__when">20 December</span>
+                                            <span class="repayment-list__meta">Monthly instalment Â· sample</span>
+                                        </span>
+                                        <span class="repayment-list__amount">BDT 7,202</span>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section class="panel" aria-labelledby="status-key-title">
+                                <div class="panel__head">
+                                    <h3 id="status-key-title">Payment status key</h3>
+                                </div>
+                                <ul class="legend-list">
+                                    <li><span class="dot dot--success" aria-hidden="true"></span>Completed</li>
+                                    <li><span class="dot dot--warning" aria-hidden="true"></span>Pending</li>
+                                    <li><span class="dot dot--danger" aria-hidden="true"></span>Failed</li>
+                                </ul>
+                                <p class="small muted">Colour is a secondary cue. Every status is also written out in the table.</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="demo-note">
+                    <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-lock"></use></svg>
+                    <span>This dashboard is a static demonstration. It is not connected to any account, it displays no real personal or financial information, and it cannot be used to move money.</span>
+                </p>
+            </div>
+        </section>
+
+        <section class="section section--surface" aria-labelledby="notes-title">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Design notes</span>
+                    <h2 id="notes-title">What this dashboard demonstrates</h2>
+                    <p class="lead">The layout prioritises the questions a small business owner asks first, then provides detail on demand.</p>
+                </div>
+                <div class="feature-grid feature-grid--2up">
+                    <div class="feature">
+                        <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-wallet"></use></svg>
+                        <div>
+                            <h3>Balance first</h3>
+                            <p>The available balance and this month's movement appear before any detail, so the first glance answers the main question.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-filter"></use></svg>
+                        <div>
+                            <h3>Filter rather than scroll</h3>
+                            <p>Type chips reduce a long list to what matters: incoming, outgoing or pending items awaiting action.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chart"></use></svg>
+                        <div>
+                            <h3>Accessible chart</h3>
+                            <p>The bar chart is drawn with CSS and carries a full text alternative describing its trend.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-eye"></use></svg>
+                        <div>
+                            <h3>No colour dependence</h3>
+                            <p>Statuses combine a symbol, a colour and a written label so meaning survives greyscale or colour-vision differences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div data-component="cta-section"
+             data-title="See how the repayment figures are produced"
+             data-text="The calculator behind the sample instalments is available on its own page, with the formula and assumptions written out."
+             data-primary-label="Open the loan calculator"
+             data-primary-href="loan-calculator.html"
+             data-secondary-label="Review digital payments"
+             data-secondary-href="digital-payments.html"></div>
+    </main>
+
+    <div data-component="footer"></div>
+
+    <script type="module" src="../../../public/js/main.js"></script>
+</body>
+</html>

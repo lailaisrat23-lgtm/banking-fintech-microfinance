@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loan Repayment Calculator | FinPulse Demo</title>
+    <meta name="description" content="A free client-side loan repayment calculator for the FinPulse demo. Enter an amount, annual rate, term and repayment frequency to see an illustrative instalment, total repayment and interest.">
+    <link rel="canonical" href="https://finpulse.example/resources/views/frontend/loan-calculator.html">
+    <meta name="theme-color" content="#123b4a">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FinPulse (fictional demo)">
+    <meta property="og:title" content="Loan Repayment Calculator | FinPulse Demo">
+    <meta property="og:description" content="Estimate instalments, total repayment and interest with a client-side calculator built for a fictional fintech demonstration.">
+    <meta property="og:url" content="https://finpulse.example/resources/views/frontend/loan-calculator.html">
+    <meta property="og:image" content="https://finpulse.example/public/assets/images/photos/financial-literacy.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="components-base" content="../../../resources/views/components/">
+    <link rel="icon" href="../../../public/assets/images/branding/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../../public/css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div data-component="header" data-active="calculator"></div>
+    <div data-component="breadcrumbs" data-trail="Home:home.html|Loan calculator"></div>
+
+    <main id="main" tabindex="-1">
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <span class="eyebrow">Loan calculator</span>
+                <h1 id="page-title">Estimate a repayment schedule</h1>
+                <p class="lead">Enter a loan amount, an annual interest rate, a term and a repayment frequency. Results update as you type and use a standard amortisation formula.</p>
+                <div class="info-panel info-panel--warning">
+                    <h3>Estimates only</h3>
+                    <p>Results exclude fees, taxes, insurance and any other charges. They are not loan offers, quotations or financial advice, and no information you enter is sent or stored.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="calc-title">
+            <div class="container">
+                <h2 id="calc-title" class="sr-only">Loan repayment calculator</h2>
+
+                <div class="calculator" data-calculator>
+                    <form class="calc-form" data-calculator-form novalidate aria-describedby="calc-help">
+                        <h3>Your figures</h3>
+                        <p class="small muted" id="calc-help">All four inputs are required. Amounts are in Bangladeshi Taka (BDT).</p>
+
+                        <div class="field" data-field="amount">
+                            <label class="field__label" for="calc-amount">Loan amount <span class="req" aria-hidden="true">*</span></label>
+                            <div class="input-group">
+                                <input class="input" type="number" id="calc-amount" name="calc-amount" value="150000"
+                                       inputmode="numeric" step="1000" min="1000" max="5000000"
+                                       aria-describedby="calc-amount-hint calc-amount-error">
+                                <span class="input-group__suffix">BDT</span>
+                            </div>
+                            <p class="field__hint" id="calc-amount-hint">Between BDT 1,000 and BDT 50,00,000.</p>
+                            <p class="field__error" id="calc-amount-error" data-error-for hidden></p>
+                        </div>
+
+                        <div class="field" data-field="rate">
+                            <label class="field__label" for="calc-rate">Annual interest rate <span class="req" aria-hidden="true">*</span></label>
+                            <div class="input-group">
+                                <input class="input" type="number" id="calc-rate" name="calc-rate" value="14"
+                                       inputmode="decimal" step="0.1" min="0" max="40"
+                                       aria-describedby="calc-rate-hint calc-rate-error">
+                                <span class="input-group__suffix">% per year</span>
+                            </div>
+                            <p class="field__hint" id="calc-rate-hint">Enter 0 for an interest-free demonstration loan.</p>
+                            <p class="field__error" id="calc-rate-error" data-error-for hidden></p>
+                        </div>
+
+                        <div class="field" data-field="term">
+                            <label class="field__label" for="calc-term">Loan term <span class="req" aria-hidden="true">*</span></label>
+                            <div class="input-group">
+                                <input class="input" type="number" id="calc-term" name="calc-term" value="24"
+                                       inputmode="numeric" step="1" min="1" max="120"
+                                       aria-describedby="calc-term-hint calc-term-error">
+                                <span class="input-group__suffix">months</span>
+                            </div>
+                            <p class="field__hint" id="calc-term-hint">Between 1 and 120 months.</p>
+                            <p class="field__error" id="calc-term-error" data-error-for hidden></p>
+                        </div>
+
+                        <fieldset>
+                            <legend>Repayment frequency</legend>
+                            <div class="radio-group">
+                                <label class="radio-pill">
+                                    <input type="radio" name="calc-frequency" value="monthly" checked>
+                                    <span>Monthly</span>
+                                </label>
+                                <label class="radio-pill">
+                                    <input type="radio" name="calc-frequency" value="fortnightly">
+                                    <span>Fortnightly</span>
+                                </label>
+                                <label class="radio-pill">
+                                    <input type="radio" name="calc-frequency" value="weekly">
+                                    <span>Weekly</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-actions">
+                            <button class="btn btn--primary" type="submit">Recalculate</button>
+                            <button class="btn btn--ghost" type="reset" data-calc-reset>Reset to sample values</button>
+                        </div>
+                    </form>
+
+                    <div class="calc-results">
+                        <div class="cluster cluster--between">
+                            <h3>Illustrative results</h3>
+                            <span class="badge badge--demo">Estimate only</span>
+                        </div>
+
+                        <dl aria-live="polite">
+                            <div class="result-row">
+                                <dt>Estimated instalment</dt>
+                                <dd data-result="payment">â€”</dd>
+                            </div>
+                            <div class="result-row">
+                                <dt>Number of instalments</dt>
+                                <dd data-result="periods">â€”</dd>
+                            </div>
+                            <div class="result-row">
+                                <dt>Estimated interest</dt>
+                                <dd data-result="interest">â€”</dd>
+                            </div>
+                            <div class="result-row result-row--total">
+                                <dt>Total estimated repayment</dt>
+                                <dd data-result="total">â€”</dd>
+                            </div>
+                        </dl>
+
+                        <div class="calc-summary" data-calc-summary>Adjust the inputs to see a written summary of the estimate.</div>
+
+                        <div>
+                            <h3 class="small">Sample schedule preview</h3>
+                            <div class="table-wrap">
+                                <table class="data-table">
+                                    <caption class="sr-only">Preview of the first and final instalments</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Payment</th>
+                                            <th scope="col">Interest</th>
+                                            <th scope="col">Principal</th>
+                                            <th scope="col">Balance</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody data-calc-schedule>
+                                        <tr>
+                                            <td colspan="5">Enter valid figures to preview the schedule.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--surface" aria-labelledby="assumptions-title">
+            <div class="container">
+                <div class="split">
+                    <div>
+                        <span class="eyebrow">How the estimate works</span>
+                        <h2 id="assumptions-title">Assumptions behind the calculation</h2>
+                        <ul class="assumptions">
+                            <li>The annual interest rate is converted to a periodic rate by dividing it by the number of instalments per year: 12 for monthly, 26 for fortnightly and 52 for weekly.</li>
+                            <li>The term is entered in months and converted to a number of instalments using the same frequency. A 12-month weekly loan therefore has 52 instalments.</li>
+                            <li>The instalment is calculated with the standard amortisation formula: <span class="nowrap">P Ã— i Ã· (1 âˆ’ (1 + i)<sup>âˆ’n</sup>)</span>, where <em>P</em> is the amount, <em>i</em> the periodic rate and <em>n</em> the number of instalments.</li>
+                            <li>When the annual rate is zero, the amount is divided by the number of instalments and interest is reported as BDT 0.</li>
+                            <li>Results are rounded to whole Taka for display, so the sum of the displayed instalments may differ from the displayed total by a few Taka.</li>
+                            <li>Processing fees, taxes, insurance, late-payment charges and early-settlement adjustments are all excluded.</li>
+                            <li>No compounding convention beyond per-period interest on the remaining balance is modelled, and no grace period is applied.</li>
+                        </ul>
+                    </div>
+                    <div class="stack">
+                        <div class="info-panel info-panel--danger">
+                            <h3>This is not an offer</h3>
+                            <p>The calculator cannot approve anything and does not know your income, expenses or credit history. A real provider would assess affordability before offering terms.</p>
+                        </div>
+                        <div class="info-panel">
+                            <h3>Interpreting the numbers</h3>
+                            <p>A larger instalment usually means a shorter, cheaper loan. A smaller instalment usually means a longer, more expensive one. Compare the total estimated repayment column before choosing.</p>
+                        </div>
+                        <div class="info-panel">
+                            <h3>Zero-interest example</h3>
+                            <p>Enter BDT 12,000 at 0% over 12 months monthly. The result is twelve instalments of BDT 1,000 with no interest, and the total equals the amount borrowed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="calc-faq-title">
+            <div class="container container--narrow">
+                <div class="section-head section-head--center">
+                    <span class="eyebrow">Questions</span>
+                    <h2 id="calc-faq-title">Calculator questions</h2>
+                </div>
+                <div class="accordion" data-accordion>
+                    <div class="accordion__item">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>Why is my bank's quoted instalment different?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>Real agreements often add processing fees, insurance or taxes to the financed amount, use a different day-count convention, or apply a fixed-rate rather than reducing-balance method. Those differences change the instalment.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>Why do weekly and monthly results differ slightly in total?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>With more frequent payments the balance falls sooner, so less interest accrues over the same term. The difference is usually small compared with fees, which are excluded here.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>Is my input saved anywhere?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>No. The calculation happens in your browser with plain JavaScript. Nothing is transmitted, stored in cookies, written to local storage or added to a URL.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>What does "invalid input" mean?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>The calculator rejects blank fields, negative numbers and values outside the stated ranges. Each field explains its own limit directly below the input, and the message is associated with the field for screen readers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div data-component="cta-section"
+             data-title="Read the guidance behind the numbers"
+             data-text="The financial literacy page explains interest, total cost, cash-flow planning and repayment discipline in plain language."
+             data-primary-label="Open financial literacy"
+             data-primary-href="financial-literacy.html"
+             data-secondary-label="Compare sample loan products"
+             data-secondary-href="sme-loans.html"></div>
+    </main>
+
+    <div data-component="footer"></div>
+
+    <script type="module" src="../../../public/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" role="img" aria-labelledby="svcTitle">
+    <title id="svcTitle">Illustration of a service provider scheduling appointments and collecting payment digitally</title>
+    <rect width="360" height="220" rx="16" fill="#eef4f5"/>
+    <rect x="48" y="60" width="140" height="112" rx="10" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+    <path d="M48 72a12 12 0 0112-12h116a12 12 0 0112 12v18H48z" fill="#123b4a"/>
+    <g fill="#e2eaec">
+        <rect x="66" y="104" width="30" height="24" rx="4"/>
+        <rect x="104" y="104" width="30" height="24" rx="4"/>
+        <rect x="142" y="104" width="30" height="24" rx="4"/>
+        <rect x="66" y="136" width="30" height="24" rx="4"/>
+    </g>
+    <rect x="104" y="136" width="30" height="24" rx="4" fill="#087f5b"/>
+    <rect x="142" y="136" width="30" height="24" rx="4" fill="#e2eaec"/>
+    <rect x="208" y="78" width="104" height="76" rx="10" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+    <circle cx="232" cy="106" r="12" fill="#e3f1ea"/>
+    <path d="M226 106l4 4 8-9" fill="none" stroke="#0f6b3f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="252" y="100" width="46" height="7" rx="3.5" fill="#c7d8dd"/>
+    <rect x="252" y="113" width="34" height="7" rx="3.5" fill="#e2eaec"/>
+    <rect x="224" y="132" width="72" height="8" rx="4" fill="#e2eaec"/>
+    <rect x="48" y="184" width="264" height="8" rx="4" fill="#d5e2e6"/>
+</svg>

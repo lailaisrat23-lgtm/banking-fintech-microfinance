@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Payments &amp; Merchant Collections | FinPulse Demo</title>
+    <meta name="description" content="A fictional demonstration of merchant payment acceptance: QR concepts, payment links, collection workflows, transaction history, settlement overview and reconciliation.">
+    <link rel="canonical" href="https://finpulse.example/resources/views/frontend/digital-payments.html">
+    <meta name="theme-color" content="#123b4a">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FinPulse (fictional demo)">
+    <meta property="og:title" content="Digital Payments &amp; Merchant Collections | FinPulse Demo">
+    <meta property="og:description" content="Simulated merchant payment flows, settlement timelines and reconciliation views for a fintech design demonstration.">
+    <meta property="og:url" content="https://finpulse.example/resources/views/frontend/digital-payments.html">
+    <meta property="og:image" content="https://finpulse.example/public/assets/images/photos/merchant-counter.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="components-base" content="../../../resources/views/components/">
+    <link rel="icon" href="../../../public/assets/images/branding/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../../public/css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div data-component="header" data-active="digital-payments"></div>
+    <div data-component="breadcrumbs" data-trail="Home:home.html|Services:services.html|Digital payments"></div>
+
+    <main id="main" tabindex="-1">
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <span class="eyebrow">Digital payments</span>
+                <h1 id="page-title">Merchant collections that make sense the next morning</h1>
+                <p class="lead">This page demonstrates how a small merchant could accept digital payments and understand the result: what was received, what is pending, what settles when and how it reconciles against orders.</p>
+                <div class="info-panel info-panel--warning">
+                    <h3>Everything here is simulated</h3>
+                    <p>No payment gateway is connected. No card, wallet or QR payment can be made. Statuses, amounts and settlement dates are static text in the page or sample data loaded from a JSON file.</p>
+                </div>
+            </div>
+        </section>
+
+        <nav class="subnav" aria-label="Service pages">
+            <div class="container">
+                <ul class="subnav__list">
+                    <li><a class="subnav__link" href="services.html">All services</a></li>
+                    <li><a class="subnav__link" href="digital-payments.html" aria-current="page">Digital payments</a></li>
+                    <li><a class="subnav__link" href="microfinance.html">Microfinance</a></li>
+                    <li><a class="subnav__link" href="sme-loans.html">SME loans</a></li>
+                    <li><a class="subnav__link" href="p2p-lending.html">P2P marketplace</a></li>
+                    <li><a class="subnav__link" href="financial-literacy.html">Financial literacy</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="section" aria-labelledby="overview-title">
+            <div class="container split">
+                <div>
+                    <span class="eyebrow">Overview</span>
+                    <h2 id="overview-title">From a customer's phone to a readable statement</h2>
+                    <p>A merchant payment has three separate moments: the customer authorises, the payment clears, and the money settles into the business account. Small businesses often see only the middle step and then guess about the rest.</p>
+                    <p>The demonstration below keeps those moments visually distinct and labels each one in words. Colour is used as a secondary cue only; every status also carries a text label such as <em>Completed</em>, <em>Pending</em> or <em>Failed</em>.</p>
+                    <ul class="benefit-list">
+                        <li>
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg>
+                            <span><strong>Text-first statuses.</strong> Customers and staff do not need to interpret colour to understand a payment.</span>
+                        </li>
+                        <li>
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg>
+                            <span><strong>Plain settlement language.</strong> Gross amount, fee and expected date are shown as separate, labelled figures.</span>
+                        </li>
+                        <li>
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg>
+                            <span><strong>Reconciliation by exception.</strong> Matched items stay quiet; only unmatched items are called out.</span>
+                        </li>
+                    </ul>
+                </div>
+                <figure class="figure-block">
+                    <img src="../../../public/assets/images/photos/customer-cashier.jpg"
+                         alt="Stock photograph of a customer paying at a shop counter while a member of staff confirms the amount."
+                         width="960" height="640" loading="lazy" decoding="async">
+                    <figcaption>Stock photograph, used for illustration only. No real merchant, customer or payment is shown.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section section--surface" aria-labelledby="acceptance-title">
+            <div class="container">
+                <div data-component="section-heading"
+                     data-id="acceptance-title"
+                     data-eyebrow="Payment services"
+                     data-title="Six demonstration payment flows"
+                     data-lead="Each card describes one flow and the channels it involves."></div>
+                <div class="grid grid--2">
+                    <article class="payment-card">
+                        <span class="icon-tile icon-tile--accent">
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-qr"></use></svg>
+                        </span>
+                        <div class="payment-card__body">
+                            <h3 class="payment-card__title">Merchant QR acceptance</h3>
+                            <p class="payment-card__text">A demonstration counter flow: the customer scans a static or dynamic QR code, the merchant sees a pending status, then an illustrative confirmation.</p>
+                            <ul class="payment-card__meta">
+                                <li><span class="badge">QR</span></li>
+                                <li><span class="badge">In-store</span></li>
+                                <li><span class="badge">Low bandwidth</span></li>
+                            </ul>
+                            <p class="small"><span class="badge badge--info">Simulated</span></p>
+                        </div>
+                    </article>
+
+                    <article class="payment-card">
+                        <span class="icon-tile icon-tile--accent">
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-mail"></use></svg>
+                        </span>
+                        <div class="payment-card__body">
+                            <h3 class="payment-card__title">Payment links and invoices</h3>
+                            <p class="payment-card__text">A sample flow for sending a payment link to a customer by message or email, with an illustrative expiry and reminder sequence.</p>
+                            <ul class="payment-card__meta">
+                                <li><span class="badge">Link</span></li>
+                                <li><span class="badge">Invoice</span></li>
+                                <li><span class="badge">Remote</span></li>
+                            </ul>
+                            <p class="small"><span class="badge badge--info">Simulated</span></p>
+                        </div>
+                    </article>
+
+                    <article class="payment-card">
+                        <span class="icon-tile icon-tile--accent">
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-card"></use></svg>
+                        </span>
+                        <div class="payment-card__body">
+                            <h3 class="payment-card__title">Card and wallet collection</h3>
+                            <p class="payment-card__text">An illustration of how card and wallet collections could appear in a merchant statement, including a fictional settlement delay.</p>
+                            <ul class="payment-card__meta">
+                                <li><span class="badge">Card</span></li>
+                                <li><span class="badge">Wallet</span></li>
+                                <li><span class="badge">Statement</span></li>
+                            </ul>
+                            <p class="small"><span class="badge badge--info">Simulated</span></p>
+                        </div>
+                    </article>
+
+                    <article class="payment-card">
+                        <span class="icon-tile icon-tile--accent">
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-refresh"></use></svg>
+                        </span>
+                        <div class="payment-card__body">
+                            <h3 class="payment-card__title">Payment reconciliation</h3>
+                            <p class="payment-card__text">A demonstration reconciliation view that matches illustrative orders with illustrative settlements and shows unmatched items in text.</p>
+                            <ul class="payment-card__meta">
+                                <li><span class="badge">Reconciliation</span></li>
+                                <li><span class="badge">Exports</span></li>
+                                <li><span class="badge">Daily close</span></li>
+                            </ul>
+                            <p class="small"><span class="badge badge--info">Simulated</span></p>
+                        </div>
+                    </article>
+
+                    <article class="payment-card">
+                        <span class="icon-tile icon-tile--accent">
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-wallet"></use></svg>
+                        </span>
+                        <div class="payment-card__body">
+                            <h3 class="payment-card__title">Merchant settlement overview</h3>
+                            <p class="payment-card__text">A sample settlement timeline showing gross amount, illustrative fee deduction and expected settlement date for demonstration purposes.</p>
+                            <ul class="payment-card__meta">
+                                <li><span class="badge">Settlement</span></li>
+                                <li><span class="badge">Fees</span></li>
+                                <li><span class="badge">Timeline</span></li>
+                            </ul>
+                            <p class="small"><span class="badge badge--info">Simulated</span></p>
+                        </div>
+                    </article>
+
+                    <article class="payment-card">
+                        <span class="icon-tile icon-tile--accent">
+                            <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-truck"></use></svg>
+                        </span>
+                        <div class="payment-card__body">
+                            <h3 class="payment-card__title">Supplier payout concept</h3>
+                            <p class="payment-card__text">A fictional payout flow for paying suppliers from collected balances, with an approval step and an audit trail example.</p>
+                            <ul class="payment-card__meta">
+                                <li><span class="badge">Payout</span></li>
+                                <li><span class="badge">Approval</span></li>
+                                <li><span class="badge">Audit trail</span></li>
+                            </ul>
+                            <p class="small"><span class="badge badge--info">Simulated</span></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        
+<section class="section" aria-labelledby="qr-title">
+                            <div class="container split">
+                                <div>
+                                    <span class="eyebrow">QR acceptance concept</span>
+                                    <h2 id="qr-title">A counter flow that works on a modest phone</h2>
+                                    <p>The customer scans a code, the merchant sees a pending message, then a confirmation. The demo shows this as a three-step sequence with a sample amount so staff can rehearse the conversation.</p>
+                                    <ol class="steps steps--timeline">
+                                        <li>
+                                            <span class="steps__number" aria-hidden="true">1</span>
+                                            <h3 class="steps__title">Customer scans</h3>
+                                            <p class="steps__text">A static QR code identifies the shop. No personal data is transmitted in this demonstration.</p>
+                                        </li>
+                                        <li>
+                                            <span class="steps__number" aria-hidden="true">2</span>
+                                            <h3 class="steps__title">Merchant sees pending</h3>
+                                            <p class="steps__text">The screen shows <span class="status status--pending">Pending</span> with the sample amount and a timestamp.</p>
+                                        </li>
+                                        <li>
+                                            <span class="steps__number" aria-hidden="true">3</span>
+                                            <h3 class="steps__title">Confirmation recorded</h3>
+                                            <p class="steps__text">A completed status is written into the sample history. Nothing is charged, because nothing is connected.</p>
+                                        </li>
+                                        <li>
+                                            <span class="steps__number" aria-hidden="true">4</span>
+                                            <h3 class="steps__title">Day-end review</h3>
+                                            <p class="steps__text">The merchant compares the sample list with counter records to spot anything unmatched.</p>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="qr-panel">
+                                    <img src="../../../public/assets/images/photos/pos-payment.jpg"
+                                         alt="Stock photograph of a bank card being held over a small card reader."
+                                         width="960" height="640" loading="lazy" decoding="async">
+                                    <p class="qr-panel__label">Sample counter amount</p>
+                                    <p class="qr-panel__amount">BDT 850</p>
+                                    <p class="qr-panel__note">Demonstration only. No real card is read and no payment is taken.</p>
+                                    <p><span class="badge badge--demo">Simulated</span></p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section section--surface" aria-labelledby="history-title">
+                            <div class="container">
+                                <div data-component="section-heading"
+                                     data-id="history-title"
+                                     data-eyebrow="Transaction history"
+                                     data-title="A sample merchant statement"
+                                     data-lead="Amounts use Bangladeshi digit grouping. Status labels are written out so the table remains understandable without colour."></div>
+
+                                <div class="table-wrap">
+                                    <table class="data-table">
+                                        <caption>Sample transaction history — fictional data</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Time (sample)</th>
+                                                <th scope="col">Reference</th>
+                                                <th scope="col">Channel</th>
+                                                <th scope="col">Amount</th>
+                                                <th scope="col">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">10:04</th>
+                                                <td>DEMO-4821</td>
+                                                <td>QR</td>
+                                                <td class="num">BDT 850</td>
+                                                <td><span class="status status--completed">Completed</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">10:12</th>
+                                                <td>DEMO-4822</td>
+                                                <td>QR</td>
+                                                <td class="num">BDT 1,240</td>
+                                                <td><span class="status status--completed">Completed</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">11:38</th>
+                                                <td>DEMO-4823</td>
+                                                <td>Payment link</td>
+                                                <td class="num">BDT 3,600</td>
+                                                <td><span class="status status--pending">Pending</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">13:02</th>
+                                                <td>DEMO-4824</td>
+                                                <td>Card</td>
+                                                <td class="num">BDT 2,150</td>
+                                                <td><span class="status status--failed">Failed — retry suggested</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">16:47</th>
+                                                <td>DEMO-4825</td>
+                                                <td>Wallet</td>
+                                                <td class="num">BDT 980</td>
+                                                <td><span class="status status--completed">Completed</span></td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th scope="row" colspan="3">Sample collected total</th>
+                                                <td class="num">BDT 6,670</td>
+                                                <td>3 completed, 1 pending, 1 failed</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <p class="demo-note">
+                                    <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-info"></use></svg>
+                                    <span>Sample rows only. They are not exported from any system and no reference number corresponds to a real transaction.</span>
+                                </p>
+                            </div>
+                        </section>
+
+                        <section class="section" aria-labelledby="settlement-title">
+                            <div class="container">
+                                <div class="split">
+                                    <div>
+                                        <span class="eyebrow">Settlement</span>
+                                        <h2 id="settlement-title">What "settles tomorrow" should mean</h2>
+                                        <p class="lead">Settlement is the movement of collected money into the business's usable balance. The demo separates gross collection, illustrative fee and expected settlement date.</p>
+                                        <div class="table-wrap">
+                                            <table class="data-table">
+                                                <caption>Illustrative settlement breakdown</caption>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Gross collections (sample)</th>
+                                                        <td class="num">BDT 1,86,400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Illustrative service fee</th>
+                                                        <td class="num">BDT 1,864</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Refunds in the sample period</th>
+                                                        <td class="num">BDT 0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Expected settlement amount</th>
+                                                        <td class="num">BDT 1,84,536</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Expected settlement date</th>
+                                                        <td>Next business day (illustrative)</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="info-panel">
+                                        <h3>Reconciliation concept</h3>
+                                        <p>Reconciliation compares what the business recorded against what the payment records show. The demonstration highlights only exceptions, because a long list of matched items hides the two that need attention.</p>
+                                        <ul class="checklist">
+                                            <li>
+                                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check-circle"></use></svg>
+                                                <span>
+                                                    <span class="checklist__label">Matched automatically</span>
+                                                    <span class="checklist__note">Sample orders with a matching amount and reference.</span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-alert"></use></svg>
+                                                <span>
+                                                    <span class="checklist__label">Needs review — amount differs</span>
+                                                    <span class="checklist__note">One sample order recorded BDT 1,240; the payment was BDT 1,204.</span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-alert"></use></svg>
+                                                <span>
+                                                    <span class="checklist__label">Needs review — missing payment</span>
+                                                    <span class="checklist__note">A sample order exists with no corresponding payment record.</span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section section--surface" aria-labelledby="usecases-title">
+                            <div class="container">
+                                <div class="section-head">
+                                    <span class="eyebrow">Supported use cases</span>
+                                    <h2 id="usecases-title">Where these flows would fit</h2>
+                                    <p class="lead">Four common small-business patterns, described in terms of what the demonstration shows.</p>
+                                </div>
+                                <div class="grid grid--4">
+                                    <article class="card">
+                                        <span class="icon-tile"><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-store"></use></svg></span>
+                                        <h3>Counter sales</h3>
+                                        <p>Fixed-amount QR collection with an immediate text confirmation.</p>
+                                    </article>
+                                    <article class="card">
+                                        <span class="icon-tile icon-tile--accent"><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-mail"></use></svg></span>
+                                        <h3>Remote invoices</h3>
+                                        <p>Payment links sent for orders delivered later, with an expiry example.</p>
+                                    </article>
+                                    <article class="card">
+                                        <span class="icon-tile icon-tile--green"><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-refresh"></use></svg></span>
+                                        <h3>Daily reconciliation</h3>
+                                        <p>Exceptions-only review at the end of the trading day.</p>
+                                    </article>
+                                    <article class="card">
+                                        <span class="icon-tile"><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-truck"></use></svg></span>
+                                        <h3>Supplier payouts</h3>
+                                        <p>Approved outflow with an audit-trail example.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section" aria-labelledby="payments-faq-title">
+                            <div class="container container--narrow">
+                                <div class="section-head section-head--center">
+                                    <span class="eyebrow">Questions</span>
+                                    <h2 id="payments-faq-title">Payment questions</h2>
+                                </div>
+                                <div class="accordion" data-accordion>
+                                    <div class="accordion__item">
+                                        <h3 class="accordion__heading">
+                                            <button class="accordion__trigger" type="button" aria-expanded="true">
+                                                <span>Can a real payment be made from this page?</span>
+                                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                                            </button>
+                                    </h3>
+                                <div class="accordion__panel">
+                                            <p>No. There is no gateway integration, no merchant account and no server endpoint. The transaction table and the service cards are static HTML descriptions only.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion__item">
+                                        <h3 class="accordion__heading">
+                                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                                <span>Why show a failed status?</span>
+                                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                                            </button>
+                                        </h3>
+                                        <div class="accordion__panel">
+                                            <p>Because real collections do fail, and a design that only shows successes teaches staff the wrong expectations. The sample row includes a plain-text explanation and a suggested next step.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion__item">
+                                        <h3 class="accordion__heading">
+                                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                                <span>Is the settlement date accurate?</span>
+                                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                                            </button>
+                                        </h3>
+                                        <div class="accordion__panel">
+                                            <p>No. "Next business day" is an illustrative label. Real settlement timing depends on the provider, the channel and the merchant agreement.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion__item">
+                                        <h3 class="accordion__heading">
+                                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                                <span>Does the demo store card details?</span>
+                                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                                            </button>
+                                        </h3>
+                                        <div class="accordion__panel">
+                                            <p>There is no card form at all. The demo never asks for a card number, expiry date or security code, and no such field exists anywhere in the project.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-center"><a class="btn btn--ghost btn--sm" href="faq.html">Read the full FAQ</a></p>
+                            </div>
+                        </section>
+
+                        <div data-component="cta-section"
+                             data-title="See the whole picture in the dashboard demo"
+                             data-text="The dashboard brings sample collections, outgoing payments, a loan balance and upcoming repayments into one static view with a filterable transaction list."
+                             data-primary-label="Open the dashboard demo"
+                             data-primary-href="dashboard-demo.html"
+                             data-secondary-label="Explore microfinance"
+                             data-secondary-href="microfinance.html"></div>
+                    </main>
+
+                    <div data-component="footer"></div>
+
+                    <script type="module" src="../../../public/js/main.js"></script>
+                </body>
+                </html>

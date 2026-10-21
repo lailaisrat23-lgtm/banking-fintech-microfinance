@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="a4">
+    <title id="a4">Illustrated avatar for a fictional demo testimonial</title>
+    <circle cx="48" cy="48" r="48" fill="#e9eef0"/>
+    <circle cx="48" cy="38" r="16" fill="#0d2f3c"/>
+    <path d="M18 96c0-17 13-30 30-30s30 13 30 30z" fill="#0d2f3c"/>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="lendSvcTitle">
+    <title id="lendSvcTitle">Illustration of three financing paths: microfinance, SME lending and a marketplace concept</title>
+    <rect width="480" height="320" rx="18" fill="#eef4f5"/>
+    <g>
+        <rect x="34" y="66" width="128" height="188" rx="14" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+        <circle cx="98" cy="106" r="22" fill="#e3f1ea"/>
+        <path d="M98 96v20M90 106h16" stroke="#0f6b3f" stroke-width="2.6" stroke-linecap="round"/>
+        <rect x="52" y="144" width="92" height="8" rx="4" fill="#c7d8dd"/>
+        <rect x="52" y="162" width="70" height="8" rx="4" fill="#e2eaec"/>
+        <rect x="52" y="188" width="92" height="8" rx="4" fill="#e2eaec"/>
+        <rect x="52" y="206" width="58" height="8" rx="4" fill="#e2eaec"/>
+        <rect x="52" y="228" width="92" height="14" rx="7" fill="#eef4f5"/>
+      </g>
+    <g>
+        <rect x="176" y="48" width="128" height="216" rx="14" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+        <circle cx="240" cy="96" r="24" fill="#e3eef0"/>
+        <path d="M232 96h16M240 88v16" stroke="#123b4a" stroke-width="2.8" stroke-linecap="round"/>
+        <rect x="194" y="140" width="92" height="8" rx="4" fill="#c7d8dd"/>
+        <rect x="194" y="158" width="66" height="8" rx="4" fill="#e2eaec"/>
+        <g fill="#087f5b">
+            <rect x="194" y="186" width="14" height="28" rx="3"/>
+            <rect x="216" y="176" width="14" height="38" rx="3"/>
+            <rect x="238" y="162" width="14" height="52" rx="3"/>
+            <rect x="260" y="148" width="14" height="66" rx="3"/>
+        </g>
+        <rect x="194" y="232" width="92" height="14" rx="7" fill="#eef4f5"/>
+    </g>
+    <g>
+        <rect x="318" y="66" width="128" height="188" rx="14" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+        <circle cx="356" cy="104" r="14" fill="#e5eef7"/>
+        <circle cx="396" cy="104" r="14" fill="#e3f1ea"/>
+        <path d="M338 150h80M338 166h60" stroke="#e2eaec" stroke-width="8" stroke-linecap="round"/>
+        <rect x="338" y="188" width="80" height="10" rx="5" fill="#e2eaec"/>
+        <rect x="338" y="188" width="48" height="10" rx="5" fill="#087f5b"/>
+        <rect x="338" y="214" width="80" height="14" rx="7" fill="#eef4f5"/>
+    </g>
+</svg>

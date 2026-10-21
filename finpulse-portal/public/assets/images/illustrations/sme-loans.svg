@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="smeTitle">
+    <title id="smeTitle">Illustration of an SME owner reviewing growth figures and a working-capital plan</title>
+    <rect width="480" height="320" rx="18" fill="#eef4f5"/>
+    <rect x="34" y="60" width="244" height="200" rx="14" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+    <text x="54" y="90" fill="#123b4a" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold">Working capital plan</text>
+    <line x1="54" y1="228" x2="262" y2="228" stroke="#9fb2b8" stroke-width="2"/>
+    <g fill="#087f5b">
+        <rect x="60" y="192" width="20" height="36" rx="3"/>
+        <rect x="92" y="176" width="20" height="52" rx="3"/>
+        <rect x="124" y="156" width="20" height="72" rx="3"/>
+        <rect x="156" y="140" width="20" height="88" rx="3"/>
+        <rect x="188" y="118" width="20" height="110" rx="3"/>
+        <rect x="220" y="96" width="20" height="132" rx="3"/>
+    </g>
+    <path d="M70 186l32-16 32-18 32-14 32-22 32-18" fill="none" stroke="#123b4a" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="5 5"/>
+    <rect x="296" y="86" width="152" height="86" rx="12" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+    <text x="312" y="110" fill="#47575f" font-family="Arial, Helvetica, sans-serif" font-size="11">Illustrative limit</text>
+    <text x="312" y="138" fill="#123b4a" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold">BDT 500,000</text>
+    <rect x="312" y="150" width="120" height="8" rx="4" fill="#e2eaec"/>
+    <rect x="312" y="150" width="72" height="8" rx="4" fill="#087f5b"/>
+    <rect x="296" y="190" width="152" height="70" rx="12" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+    <circle cx="322" cy="214" r="9" fill="#e3f1ea"/>
+    <path d="M317 214l3.4 3.4 6.6-7" fill="none" stroke="#0f6b3f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="340" y="208" width="88" height="8" rx="4" fill="#c7d8dd"/>
+    <rect x="340" y="224" width="60" height="8" rx="4" fill="#e2eaec"/>
+    <rect x="312" y="240" width="120" height="8" rx="4" fill="#e2eaec"/>
+    <rect x="34" y="284" width="414" height="8" rx="4" fill="#d5e2e6"/>
+</svg>

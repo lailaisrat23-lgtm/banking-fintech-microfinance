@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Microfinance Solutions for Micro-Enterprises | FinPulse Demo</title>
+    <meta name="description" content="A fictional microfinance demonstration: target customer groups, small-business financing scenarios, sample repayment schedules, application steps and responsible borrowing guidance.">
+    <link rel="canonical" href="https://finpulse.example/resources/views/frontend/microfinance.html">
+    <meta name="theme-color" content="#123b4a">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FinPulse (fictional demo)">
+    <meta property="og:title" content="Microfinance Solutions for Micro-Enterprises | FinPulse Demo">
+    <meta property="og:description" content="Illustrative microfinance concepts with sample repayment schedules and responsible borrowing guidance.">
+    <meta property="og:url" content="https://finpulse.example/resources/views/frontend/microfinance.html">
+    <meta property="og:image" content="https://finpulse.example/public/assets/images/photos/microfinance-repayments.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="components-base" content="../../../resources/views/components/">
+    <link rel="icon" href="../../../public/assets/images/branding/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../../public/css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div data-component="header" data-active="microfinance"></div>
+    <div data-component="breadcrumbs" data-trail="Home:home.html|Services:services.html|Microfinance"></div>
+
+    <main id="main" tabindex="-1">
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <span class="eyebrow">Microfinance</span>
+                <h1 id="page-title">Small tickets, frequent repayments, honest arithmetic</h1>
+                <p class="lead">Micro-enterprises often borrow modest amounts and repay weekly or fortnightly. This demonstration shows how a schedule could be presented so the borrower sees both the instalment and the total cost.</p>
+                <p><span class="badge badge--demo">Illustrative content — no real loans</span></p>
+            </div>
+        </section>
+
+        <nav class="subnav" aria-label="Service pages">
+            <div class="container">
+                <ul class="subnav__list">
+                    <li><a class="subnav__link" href="services.html">All services</a></li>
+                    <li><a class="subnav__link" href="digital-payments.html">Digital payments</a></li>
+                    <li><a class="subnav__link" href="microfinance.html" aria-current="page">Microfinance</a></li>
+                    <li><a class="subnav__link" href="sme-loans.html">SME loans</a></li>
+                    <li><a class="subnav__link" href="p2p-lending.html">P2P marketplace</a></li>
+                    <li><a class="subnav__link" href="financial-literacy.html">Financial literacy</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="section" aria-labelledby="mf-overview-title">
+            <div class="container split">
+                <div>
+                    <span class="eyebrow">Service overview</span>
+                    <h2 id="mf-overview-title">Designed for businesses that repay as they trade</h2>
+                    <p>In a market where a shop's daily takings are small and frequent, a monthly instalment can feel like a large cliff edge. Microfinance generally works by matching repayment timing to income rhythm.</p>
+                    <p>The demonstration never claims that a person is eligible, and never promises approval. It shows the shape of a conversation: how much, how often, for how long, and what it costs in total.</p>
+                </div>
+                <figure class="figure-block">
+                    <img src="../../../public/assets/images/photos/microfinance-repayments.jpg"
+                         alt="Stock photograph of a shopkeeper and an assistant working behind the counter of a small neighbourhood shop."
+                         width="960" height="640" loading="lazy" decoding="async">
+                    <figcaption>Stock photograph, used for illustration only. No real business, borrower or repayment plan is depicted.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section section--surface" aria-labelledby="groups-title">
+            <div class="container">
+                <div data-component="section-heading"
+                     data-id="groups-title"
+                     data-eyebrow="Target customer groups"
+                     data-title="Who the demonstration is written for"
+                     data-lead="These are fictional personas used to shape content and tone. They are not eligibility categories."></div>
+                <div class="grid grid--3">
+                    <article class="card">
+                        <span class="icon-tile icon-tile--green"><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-store"></use></svg></span>
+                        <h3>Market and street vendors</h3>
+                        <p>Daily cash income, small stock purchases and little formal paperwork.</p>
+                    </article>
+                    <article class="card">
+                        <span class="icon-tile icon-tile--green"><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-leaf"></use></svg></span>
+                        <h3>Agro-processing households</h3>
+                        <p>Seasonal income with a clear peak and a long quiet period.</p>
+                    </article>
+                    <article class="card">
+                        <span class="icon-tile icon-tile--green"><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-users"></use></svg></span>
+                        <h3>Home-based producers</h3>
+                        <p>Tailoring, food preparation and craft work run from a household.</p>
+                    </article>
+                    <article class="card">
+                        <span class="icon-tile icon-tile--green"><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-truck"></use></svg></span>
+                        <h3>Micro-distributors</h3>
+                        <p>Small routes that need stock upfront and collect payment across the week.</p>
+                    </article>
+                    <article class="card">
+                        <span class="icon-tile icon-tile--green"><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-wrench"></use></svg></span>
+                        <h3>Repair and maintenance</h3>
+                        <p>Skilled service work with uneven weekly demand.</p>
+                    </article>
+                    <article class="card">
+                        <span class="icon-tile icon-tile--green"><svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-briefcase"></use></svg></span>
+                        <h3>First-time borrowers</h3>
+                        <p>People who have never held a formal loan and need the basics explained.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="scenarios-title">
+            <div class="container">
+                <div data-component="section-heading"
+                     data-id="scenarios-title"
+                     data-eyebrow="Financing scenarios"
+                     data-title="Three sample scenarios"
+                     data-lead="Each scenario shows how an amount, a purpose and a repayment rhythm might fit together. They are not recommendations."></div>
+
+                <div class="grid grid--3">
+                    <article class="card card--raised">
+                        <h3>Scenario A — stock top-up</h3>
+                        <dl class="fact-list">
+                            <div><dt>Sample amount</dt><dd>BDT 40,000</dd></div>
+                            <div><dt>Purpose</dt><dd>Seasonal stock</dd></div>
+                            <div><dt>Term</dt><dd>6 months</dd></div>
+                            <div><dt>Frequency</dt><dd>Fortnightly</dd></div>
+                        </dl>
+                        <p class="small muted">A shop buying ahead of a festival week. The schedule is timed to the two-week trading cycle.</p>
+                    </article>
+                    <article class="card card--raised">
+                        <h3>Scenario B — equipment repair</h3>
+                        <dl class="fact-list">
+                            <div><dt>Sample amount</dt><dd>BDT 25,000</dd></div>
+                            <div><dt>Purpose</dt><dd>Sewing machine repair</dd></div>
+                            <div><dt>Term</dt><dd>4 months</dd></div>
+                            <div><dt>Frequency</dt><dd>Weekly</dd></div>
+                        </dl>
+                        <p class="small muted">A tailoring household restoring capacity. Weekly instalments track small but steady orders.</p>
+                    </article>
+                    <article class="card card--raised">
+                        <h3>Scenario C — delivery support</h3>
+                        <dl class="fact-list">
+                            <div><dt>Sample amount</dt><dd>BDT 65,000</dd></div>
+                            <div><dt>Purpose</dt><dd>Used delivery bicycle</dd></div>
+                            <div><dt>Term</dt><dd>9 months</dd></div>
+                            <div><dt>Frequency</dt><dd>Fortnightly</dd></div>
+                        </dl>
+                        <p class="small muted">A distributor extending a route. Longer term keeps the instalment small during ramp-up.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--surface" aria-labelledby="schedule-title">
+            <div class="container">
+                <div data-component="section-heading"
+                     data-id="schedule-title"
+                     data-eyebrow="Repayment illustration"
+                     data-title="What a schedule looks like"
+                     data-lead="This sample uses BDT 40,000 over 6 months at an illustrative 16% annual rate, repaid fortnightly. Use the calculator to change the inputs."></div>
+
+                <div class="table-wrap">
+                    <table class="data-table">
+                        <caption>Illustrative fortnightly schedule — first, second and final instalments shown</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Instalment</th>
+                                <th scope="col">Payment</th>
+                                <th scope="col">Interest portion</th>
+                                <th scope="col">Principal portion</th>
+                                <th scope="col">Balance after</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td class="num">BDT 3,211</td>
+                                <td class="num">BDT 246</td>
+                                <td class="num">BDT 2,965</td>
+                                <td class="num">BDT 37,035</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td class="num">BDT 3,211</td>
+                                <td class="num">BDT 228</td>
+                                <td class="num">BDT 2,983</td>
+                                <td class="num">BDT 34,052</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">…</th>
+                                <td class="num" colspan="4">Intermediate instalments omitted from the sample table</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">13</th>
+                                <td class="num">BDT 3,211</td>
+                                <td class="num">BDT 20</td>
+                                <td class="num">BDT 3,191</td>
+                                <td class="num">BDT 0</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="row" colspan="1">Totals</th>
+                                <td class="num">BDT 41,744</td>
+                                <td class="num">BDT 1,744</td>
+                                <td class="num">BDT 40,000</td>
+                                <td class="num">—</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <p class="demo-note">
+                    <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-info"></use></svg>
+                    <span>Amounts are rounded for display. In a real agreement, rounding rules and any fees would be stated in the contract.</span>
+                </p>
+                <p><a class="btn btn--secondary btn--sm" href="loan-calculator.html">Recalculate with your own figures</a></p>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="apply-title">
+            <div class="container">
+                <div class="split">
+                    <div>
+                        <span class="eyebrow">Application process</span>
+                        <h2 id="apply-title">Six steps, no surprises</h2>
+                        <ol class="timeline">
+                            <li>
+                                <span class="timeline__marker" aria-hidden="true">1</span>
+                                <div class="timeline__body">
+                                    <h3>Discuss the purpose</h3>
+                                    <p>What the money is for, and how it generates the income to repay it.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="timeline__marker" aria-hidden="true">2</span>
+                                <div class="timeline__body">
+                                    <h3>Review affordability</h3>
+                                    <p>Compare the instalment with a conservative estimate of weekly income.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="timeline__marker" aria-hidden="true">3</span>
+                                <div class="timeline__body">
+                                    <h3>Agree amount and term</h3>
+                                    <p>Test two or three structures with the calculator before choosing one.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="timeline__marker" aria-hidden="true">4</span>
+                                <div class="timeline__body">
+                                    <h3>Understand total cost</h3>
+                                    <p>Look at interest and any charges across the whole term, not only the instalment.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="timeline__marker" aria-hidden="true">5</span>
+                                <div class="timeline__body">
+                                    <h3>Complete documentation</h3>
+                                    <p>Sample checklists make the required records visible before signing anything.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="timeline__marker" aria-hidden="true">6</span>
+                                <div class="timeline__body">
+                                    <h3>Plan the repayment routine</h3>
+                                    <p>Decide which day the instalment is set aside, and how a slow week is handled.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="stack">
+                        <div class="info-panel info-panel--warning">
+                            <h3>Responsible borrowing guidance</h3>
+                            <p>Borrow for a purpose that produces income. Keep an instalment well below the smallest realistic week, so an ordinary bad week does not become a missed payment.</p>
+                        </div>
+                        <div class="info-panel">
+                            <h3>Transparency principles</h3>
+                            <ul class="benefit-list">
+                                <li>
+                                    <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg>
+                                    <span>Total repayment is stated, not only the instalment</span>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg>
+                                    <span>Fees and charges are listed separately from interest</span>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg>
+                                    <span>Late-payment consequences are explained in advance</span>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-check"></use></svg>
+                                    <span>Borrowers can ask for the schedule in writing</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info-panel info-panel--danger">
+                            <h3>No promises</h3>
+                            <p>This demonstration does not promise a loan, an approval or a specific rate. Any real application would be assessed by a licensed provider under its own rules.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--surface" aria-labelledby="mf-faq-title">
+            <div class="container container--narrow">
+                <div class="section-head section-head--center">
+                    <span class="eyebrow">Questions</span>
+                    <h2 id="mf-faq-title">Microfinance questions</h2>
+                </div>
+                <div class="accordion" data-accordion>
+                    <div class="accordion__item">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>Why are weekly repayments common in microfinance?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>Income arrives in small amounts throughout the week, so repayment in smaller, frequent sums often matches cash flow better than one large monthly payment. The trade-off is more payment events to manage.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>Is a lower instalment always cheaper?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>No. Stretching the term lowers the instalment but usually increases total interest. A longer term can be the right choice for affordability, but it should be a conscious trade-off, not an accident.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>Does this page check my eligibility?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>No. There is no application form, no scoring and no data collection. The scenarios are written descriptions only.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <h3 class="accordion__heading">
+                            <button class="accordion__trigger" type="button" aria-expanded="false">
+                                <span>What should I ask a real lender?</span>
+                                <svg class="accordion__icon" aria-hidden="true" focusable="false"><use href="../../../public/assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+                            </button>
+                        </h3>
+                        <div class="accordion__panel">
+                            <p>Ask for the total repayment amount, all fees, the exact repayment dates, what happens if a payment is late, and whether early repayment reduces the cost. Get the schedule in writing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div data-component="cta-section"
+             data-title="Model a schedule before you commit"
+             data-text="The calculator supports weekly, fortnightly and monthly repayment frequencies and shows the estimated total cost for each."
+             data-primary-label="Open the loan calculator"
+             data-primary-href="loan-calculator.html"
+             data-secondary-label="Read borrowing guidance"
+             data-secondary-href="financial-literacy.html"></div>
+    </main>
+
+    <div data-component="footer"></div>
+
+    <script type="module" src="../../../public/js/main.js"></script>
+</body>
+</html>

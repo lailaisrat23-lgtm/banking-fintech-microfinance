@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="howTitle">
+    <title id="howTitle">Illustration of a three step journey: choose a service, review illustrative figures, and plan next steps</title>
+    <rect width="480" height="320" rx="18" fill="#eef4f5"/>
+    <path d="M96 96h60M204 96h60M312 96h60" stroke="#9fb2b8" stroke-width="2.4" stroke-dasharray="6 6"/>
+    <g>
+        <rect x="30" y="60" width="112" height="150" rx="14" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+        <circle cx="86" cy="98" r="20" fill="#e3eef0"/>
+        <path d="M78 98h16M86 90v16" stroke="#123b4a" stroke-width="3" stroke-linecap="round"/>
+        <rect x="48" y="130" width="76" height="8" rx="4" fill="#c7d8dd"/>
+        <rect x="48" y="148" width="58" height="8" rx="4" fill="#e2eaec"/>
+        <rect x="48" y="176" width="76" height="22" rx="11" fill="#eef4f5"/>
+        <text x="86" y="191" fill="#123b4a" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Step 1</text>
+    </g>
+    <g>
+        <rect x="174" y="60" width="112" height="150" rx="14" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+        <rect x="192" y="80" width="76" height="36" rx="8" fill="#e3f1ea"/>
+        <text x="230" y="104" fill="#055f45" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">BDT</text>
+        <rect x="192" y="130" width="76" height="8" rx="4" fill="#c7d8dd"/>
+        <rect x="192" y="148" width="58" height="8" rx="4" fill="#e2eaec"/>
+        <rect x="192" y="176" width="76" height="22" rx="11" fill="#eef4f5"/>
+        <text x="230" y="191" fill="#123b4a" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Step 2</text>
+    </g>
+    <g>
+        <rect x="318" y="60" width="112" height="150" rx="14" fill="#ffffff" stroke="#c7d8dd" stroke-width="2"/>
+        <rect x="336" y="84" width="76" height="8" rx="4" fill="#e2eaec"/>
+        <rect x="336" y="100" width="56" height="8" rx="4" fill="#e2eaec"/>
+        <rect x="336" y="116" width="68" height="8" rx="4" fill="#e2eaec"/>
+        <circle cx="374" cy="152" r="16" fill="#e3f1ea"/>
+        <path d="M367 152l5 5 10-11" fill="none" stroke="#0f6b3f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="336" y="176" width="76" height="22" rx="11" fill="#eef4f5"/>
+        <text x="374" y="191" fill="#123b4a" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Step 3</text>
+    </g>
+    <rect x="30" y="238" width="400" height="8" rx="4" fill="#d5e2e6"/>
+    <rect x="30" y="258" width="256" height="8" rx="4" fill="#d5e2e6"/>
+</svg>
